@@ -1,0 +1,1421 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Industrial Expo 2023 || Gurgaon Industrial Association</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/gallery.css" rel="stylesheet" />
+    <link href="css/gallery.scss" rel="stylesheet" />
+    <style>
+      .gallery-card img {
+        width: 100%;
+        /* fills card width */
+        height: auto;
+        /* keeps original aspect ratio */
+        object-fit: cover;
+        /* ensures fill without distortion (optional) */
+        border-radius: 8px;
+        transition: transform 0.3s ease;
+      }
+
+      .gallery-card {
+        aspect-ratio: 4 / 3;
+        /* maintains consistent card height ratio */
+        overflow: hidden;
+      }
+
+      .gallery-card:hover img {
+        transform: scale(1.05);
+      }
+
+      .image-popup {
+        display: none;
+        position: fixed;
+        z-index: 9999;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        justify-content: center;
+        align-items: center;
+      }
+
+      .image-popup img {
+        max-width: 100%;
+        max-height: 90%;
+        border-radius: 10px;
+      }
+
+      .image-popup .close-btn {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        font-size: 40px;
+        color: white;
+        cursor: pointer;
+      }
+
+      @media (max-width: 480px) {
+        .swiper-slide img {
+          width: 100%;
+          max-width: 300px;
+          /* Ensures same size for all images */
+          height: 100px;
+          /* Fixed height for uniformity */
+          object-fit: cover;
+          /* Ensures images maintain aspect ratio */
+          border-radius: 10px;
+        }
+      }
+
+      /* Hover zoom effect */
+      .gallery-card img {
+        transition: transform 0.4s ease;
+        cursor: pointer;
+      }
+
+      .gallery-card:hover img {
+        transform: scale(1.1);
+      }
+
+      /* Fullscreen zoom on click */
+      .fullscreen-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.9);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+        display: none;
+      }
+
+      .fullscreen-overlay img {
+        max-width: 90%;
+        max-height: 90%;
+        object-fit: contain;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Spinner Start -->
+    <div
+      id="spinner"
+      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+    >
+      <div
+        class="spinner-border text-primary"
+        style="width: 3rem; height: 3rem"
+        role="status"
+      >
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+    <!-- Spinner End -->
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid sticky-top px-0">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-light">
+        <a href="index.html" class="navbar-brand mobilelogo">
+          <img src="img/logo.png" class="img-fluid logo" alt="" />
+          <a class="img-fluid mobilelogotxt">
+            <h6><b>Gurgaon Industrial Association</b></h6>
+          </a>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+        >
+          <span class="fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav ms-auto pt-2 pt-lg-0">
+            <a href="index.html" class="nav-item nav-link">Home</a>
+            <a href="about.html" class="nav-item nav-link">About Us</a>
+            <a href="event.html" class="nav-item nav-link">Event</a>
+            <a href="leadership.html" class="nav-item nav-link"
+              >Governing Body</a
+            >
+            <a href="glorious-past.html" class="nav-item nav-link"
+              >Glorious Past</a
+            >
+            <a href="hall-booking.html" class="nav-item nav-link"
+              >Hall Booking</a
+            >
+            <a href="membership.html" class="nav-item nav-link">Membership</a>
+            <a href="gallery.html" class="nav-item nav-link active">Gallery</a>
+            <a href="blog.html" class="nav-item nav-link">Blog</a>
+          </div>
+          <div
+            class="d-flex align-items-center flex-nowrap pt-3 pt-lg-0 ms-lg-2"
+          >
+            <a
+              href="contact.html"
+              class="btn btn-secondary py-2 px-4 ms-3 flex-wrap flex-sm-shrink-0"
+              >Contact us</a
+            >
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- Navbar & Hero End -->
+    <!-- Modal Search Start -->
+    <div
+      class="modal fade"
+      id="searchModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content rounded-0">
+          <div class="modal-header">
+            <h4 class="modal-title mb-0" id="exampleModalLabel">
+              Search by keyword
+            </h4>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body d-flex align-items-center">
+            <div class="input-group w-100 mx-auto d-flex">
+              <input
+                type="search"
+                class="form-control p-3"
+                placeholder="keywords"
+                aria-describedby="search-icon-1"
+              />
+              <span id="search-icon-1" class="input-group-text p-3"
+                ><i class="fa fa-search"></i
+              ></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Search End -->
+    <!-- Header Start -->
+    <div class="container-fluid bg-breadcrumb">
+      <div class="container text-center py-2" style="max-width: 900px">
+        <h4
+          class="text-white display-4 mb-4 wow fadeInDown"
+          data-wow-delay="0.1s"
+        >
+          Industrial Expo 2023
+        </h4>
+        <p class="text-secondary fs-5">
+          Experience the moments from our events. Hover over the images to
+          explore more!
+        </p>
+      </div>
+    </div>
+    <!-- Header End -->
+
+    <!-- GIA Gallery Page Start -->
+    <div class="container-fluid py-5 bg-light">
+      <div class="container">
+        <!-- Gallery Section -->
+        <div class="row g-2">
+          <!-- Example for 2855 -->
+
+          <!-- Image Popup Container -->
+          <div id="imagePopup" class="image-popup">
+            <span class="close-btn" id="closePopup">&times;</span>
+            <img id="popupImg" src="" alt="Full Image" />
+          </div>
+
+          <style>
+            .gallery-card2 {
+              height: 300px !important;
+
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+
+            .gallery-card video {
+              max-height: 100%;
+              max-width: 100%;
+              object-fit: contain;
+            }
+          </style>
+
+          <!-- Example for 2856 -->
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="gallery-card position-relative overflow-hidden">
+              <img
+                src="img/top-category/img-events (3).JPG"
+                class="img-fluid rounded popup-image"
+                alt="Event Photo 56"
+              />
+              <div
+                class="gallery-overlay d-flex flex-column justify-content-center align-items-center text-white"
+              ></div>
+            </div>
+          </div>
+          <!-- Example for 2857 -->
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="gallery-card position-relative overflow-hidden">
+              <img
+                src="img/top-category/img-events (4).JPG"
+                class="img-fluid rounded popup-image"
+                alt="Event Photo 57"
+              />
+              <div
+                class="gallery-overlay d-flex flex-column justify-content-center align-items-center text-white"
+              ></div>
+            </div>
+          </div>
+          <!-- Example for 2858 -->
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="gallery-card position-relative overflow-hidden">
+              <img
+                src="img/top-category/img-events (5).JPG"
+                class="img-fluid rounded popup-image"
+                alt="Event Photo 58"
+              />
+              <div
+                class="gallery-overlay d-flex flex-column justify-content-center align-items-center text-white"
+              ></div>
+            </div>
+          </div>
+          <!-- Example for 2859 -->
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="gallery-card position-relative overflow-hidden">
+              <img
+                src="img/top-category/img-events (6).JPG"
+                class="img-fluid rounded popup-image"
+                alt="Event Photo 59"
+              />
+              <div
+                class="gallery-overlay d-flex flex-column justify-content-center align-items-center text-white"
+              ></div>
+            </div>
+          </div>
+          <!-- Example for 2860 -->
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="gallery-card position-relative overflow-hidden">
+              <img
+                src="img/top-category/img-events (7).JPG"
+                class="img-fluid rounded popup-image"
+                alt="Event Photo 60"
+              />
+              <div
+                class="gallery-overlay d-flex flex-column justify-content-center align-items-center text-white"
+              ></div>
+            </div>
+          </div>
+          <!-- Example for 2861 -->
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="gallery-card position-relative overflow-hidden">
+              <img
+                src="img/top-category/img-events (8).JPG"
+                class="img-fluid rounded popup-image"
+                alt="Event Photo 61"
+              />
+              <div
+                class="gallery-overlay d-flex flex-column justify-content-center align-items-center text-white"
+              ></div>
+            </div>
+          </div>
+          <!-- Example for 2862 -->
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="gallery-card position-relative overflow-hidden">
+              <img
+                src="img/top-category/img-events (9).JPG"
+                class="img-fluid rounded popup-image"
+                alt="Event Photo 62"
+              />
+              <div
+                class="gallery-overlay d-flex flex-column justify-content-center align-items-center text-white"
+              ></div>
+            </div>
+          </div>
+          <!-- Example for 2863 -->
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="gallery-card position-relative overflow-hidden">
+              <img
+                src="img/top-category/img-events (10).JPG"
+                class="img-fluid rounded popup-image"
+                alt="Event Photo 63"
+              />
+              <div
+                class="gallery-overlay d-flex flex-column justify-content-center align-items-center text-white"
+              ></div>
+            </div>
+          </div>
+          <!-- Example for 2864 -->
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="gallery-card position-relative overflow-hidden">
+              <img
+                src="img/top-category/img-events (11).JPG"
+                class="img-fluid rounded popup-image"
+                alt="Event Photo 64"
+              />
+              <div
+                class="gallery-overlay d-flex flex-column justify-content-center align-items-center text-white"
+              ></div>
+            </div>
+          </div>
+
+          <!-- Example for 2865 -->
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="gallery-card position-relative overflow-hidden">
+              <img
+                src="img/top-category/img-events (12).JPG"
+                class="img-fluid rounded popup-image"
+                alt="Event Photo 65"
+              />
+              <div
+                class="gallery-overlay d-flex flex-column justify-content-center align-items-center text-white"
+              ></div>
+            </div>
+          </div>
+          <!-- Example for 2866 -->
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="gallery-card position-relative overflow-hidden">
+              <img
+                src="img/top-category/img-events (13).JPG"
+                class="img-fluid rounded popup-image"
+                alt="Event Photo 66"
+              />
+              <div
+                class="gallery-overlay d-flex flex-column justify-content-center align-items-center text-white"
+              ></div>
+            </div>
+          </div>
+          <!-- Example for 2865 -->
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="gallery-card position-relative overflow-hidden">
+              <img
+                src="img/top-category/img-events (14).JPG"
+                class="img-fluid rounded popup-image"
+                alt="Event Photo 65"
+              />
+              <div
+                class="gallery-overlay d-flex flex-column justify-content-center align-items-center text-white"
+              ></div>
+            </div>
+          </div>
+          <!-- Example for 2866 -->
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="gallery-card position-relative overflow-hidden">
+              <img
+                src="img/top-category/img-events (15).JPG"
+                class="img-fluid rounded popup-image"
+                alt="Event Photo 66"
+              />
+              <div
+                class="gallery-overlay d-flex flex-column justify-content-center align-items-center text-white"
+              ></div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="gallery-card position-relative overflow-hidden">
+              <img
+                src="img/top-category/img-events (16).JPG"
+                class="img-fluid rounded popup-image"
+                alt="Event Photo 66"
+              />
+              <div
+                class="gallery-overlay d-flex flex-column justify-content-center align-items-center text-white"
+              ></div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="gallery-card position-relative overflow-hidden">
+              <img
+                src="img/top-category/img-events (17).JPG"
+                class="img-fluid rounded popup-image"
+                alt="Event Photo 66"
+              />
+              <div
+                class="gallery-overlay d-flex flex-column justify-content-center align-items-center text-white"
+              ></div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="gallery-card position-relative overflow-hidden">
+              <img
+                src="img/top-category/img-events (18).JPG"
+                class="img-fluid rounded popup-image"
+                alt="Event Photo 66"
+              />
+              <div
+                class="gallery-overlay d-flex flex-column justify-content-center align-items-center text-white"
+              ></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="gallery-card position-relative overflow-hidden">
+              <img
+                src="img/top-category/img-events (19).JPG"
+                class="img-fluid rounded popup-image"
+                alt="Event Photo 66"
+              />
+              <div
+                class="gallery-overlay d-flex flex-column justify-content-center align-items-center text-white"
+              ></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="gallery-card position-relative overflow-hidden">
+              <img
+                src="img/top-category/img-events (20).JPG"
+                class="img-fluid rounded popup-image"
+                alt="Event Photo 66"
+              />
+              <div
+                class="gallery-overlay d-flex flex-column justify-content-center align-items-center text-white"
+              ></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="gallery-card position-relative overflow-hidden">
+              <img
+                src="img/top-category/img-events (21).JPG"
+                class="img-fluid rounded popup-image"
+                alt="Event Photo 66"
+              />
+              <div
+                class="gallery-overlay d-flex flex-column justify-content-center align-items-center text-white"
+              ></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="gallery-card position-relative overflow-hidden">
+              <img
+                src="img/top-category/img-events (22).JPG"
+                class="img-fluid rounded popup-image"
+                alt="Event Photo 66"
+              />
+              <div
+                class="gallery-overlay d-flex flex-column justify-content-center align-items-center text-white"
+              ></div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="gallery-card position-relative overflow-hidden">
+              <img
+                src="img/top-category/img-events (23).JPG"
+                class="img-fluid rounded popup-image"
+                alt="Event Photo 66"
+              />
+              <div
+                class="gallery-overlay d-flex flex-column justify-content-center align-items-center text-white"
+              ></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="gallery-card position-relative overflow-hidden">
+              <img
+                src="img/top-category/img-events (24).JPG"
+                class="img-fluid rounded popup-image"
+                alt="Event Photo 66"
+              />
+              <div
+                class="gallery-overlay d-flex flex-column justify-content-center align-items-center text-white"
+              ></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="gallery-card position-relative overflow-hidden">
+              <img
+                src="img/top-category/img-events (25).JPG"
+                class="img-fluid rounded popup-image"
+                alt="Event Photo 66"
+              />
+              <div
+                class="gallery-overlay d-flex flex-column justify-content-center align-items-center text-white"
+              ></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="gallery-card position-relative overflow-hidden">
+              <img
+                src="img/top-category/img-events (26).JPG"
+                class="img-fluid rounded popup-image"
+                alt="Event Photo 66"
+              />
+              <div
+                class="gallery-overlay d-flex flex-column justify-content-center align-items-center text-white"
+              ></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="gallery-card position-relative overflow-hidden">
+              <img
+                src="img/top-category/img-events (27).JPG"
+                class="img-fluid rounded popup-image"
+                alt="Event Photo 66"
+              />
+              <div
+                class="gallery-overlay d-flex flex-column justify-content-center align-items-center text-white"
+              ></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="gallery-card position-relative overflow-hidden">
+              <img
+                src="img/top-category/img-events (28).JPG"
+                class="img-fluid rounded popup-image"
+                alt="Event Photo 66"
+              />
+              <div
+                class="gallery-overlay d-flex flex-column justify-content-center align-items-center text-white"
+              ></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="gallery-card position-relative overflow-hidden">
+              <img
+                src="img/top-category/img-events (29).JPG"
+                class="img-fluid rounded popup-image"
+                alt="Event Photo 66"
+              />
+              <div
+                class="gallery-overlay d-flex flex-column justify-content-center align-items-center text-white"
+              ></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="gallery-card position-relative overflow-hidden">
+              <img
+                src="img/top-category/img-events (30).JPG"
+                class="img-fluid rounded popup-image"
+                alt="Event Photo 66"
+              />
+              <div
+                class="gallery-overlay d-flex flex-column justify-content-center align-items-center text-white"
+              ></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="gallery-card position-relative overflow-hidden">
+              <img
+                src="img/top-category/img-events (31).JPG"
+                class="img-fluid rounded popup-image"
+                alt="Event Photo 66"
+              />
+              <div
+                class="gallery-overlay d-flex flex-column justify-content-center align-items-center text-white"
+              ></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="gallery-card position-relative overflow-hidden">
+              <img
+                src="img/top-category/img-events (32).JPG"
+                class="img-fluid rounded popup-image"
+                alt="Event Photo 66"
+              />
+              <div
+                class="gallery-overlay d-flex flex-column justify-content-center align-items-center text-white"
+              ></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="gallery-card position-relative overflow-hidden">
+              <img
+                src="img/top-category/img-events (33).JPG"
+                class="img-fluid rounded popup-image"
+                alt="Event Photo 66"
+              />
+              <div
+                class="gallery-overlay d-flex flex-column justify-content-center align-items-center text-white"
+              ></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="gallery-card position-relative overflow-hidden">
+              <img
+                src="img/top-category/img-events (34).JPG"
+                class="img-fluid rounded popup-image"
+                alt="Event Photo 66"
+              />
+              <div
+                class="gallery-overlay d-flex flex-column justify-content-center align-items-center text-white"
+              ></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="gallery-card position-relative overflow-hidden">
+              <img
+                src="img/top-category/img-events (35).JPG"
+                class="img-fluid rounded popup-image"
+                alt="Event Photo 66"
+              />
+              <div
+                class="gallery-overlay d-flex flex-column justify-content-center align-items-center text-white"
+              ></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="gallery-card position-relative overflow-hidden">
+              <img
+                src="img/top-category/img-events (36).JPG"
+                class="img-fluid rounded popup-image"
+                alt="Event Photo 66"
+              />
+              <div
+                class="gallery-overlay d-flex flex-column justify-content-center align-items-center text-white"
+              ></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="gallery-card position-relative overflow-hidden">
+              <img
+                src="img/top-category/img-events (37).JPG"
+                class="img-fluid rounded popup-image"
+                alt="Event Photo 66"
+              />
+              <div
+                class="gallery-overlay d-flex flex-column justify-content-center align-items-center text-white"
+              ></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="gallery-card position-relative overflow-hidden">
+              <img
+                src="img/top-category/img-events (38).JPG"
+                class="img-fluid rounded popup-image"
+                alt="Event Photo 66"
+              />
+              <div
+                class="gallery-overlay d-flex flex-column justify-content-center align-items-center text-white"
+              ></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="gallery-card position-relative overflow-hidden">
+              <img
+                src="img/top-category/img-events (39).JPG"
+                class="img-fluid rounded popup-image"
+                alt="Event Photo 66"
+              />
+              <div
+                class="gallery-overlay d-flex flex-column justify-content-center align-items-center text-white"
+              ></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="gallery-card position-relative overflow-hidden">
+              <img
+                src="img/top-category/img-events (40).JPG"
+                class="img-fluid rounded popup-image"
+                alt="Event Photo 66"
+              />
+              <div
+                class="gallery-overlay d-flex flex-column justify-content-center align-items-center text-white"
+              ></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="gallery-card position-relative overflow-hidden">
+              <img
+                src="img/top-category/img-events (41).JPG"
+                class="img-fluid rounded popup-image"
+                alt="Event Photo 66"
+              />
+              <div
+                class="gallery-overlay d-flex flex-column justify-content-center align-items-center text-white"
+              ></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="gallery-card position-relative overflow-hidden">
+              <img
+                src="img/top-category/img-events (42).JPG"
+                class="img-fluid rounded popup-image"
+                alt="Event Photo 66"
+              />
+              <div
+                class="gallery-overlay d-flex flex-column justify-content-center align-items-center text-white"
+              ></div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="gallery-card position-relative overflow-hidden">
+              <img
+                src="img/top-category/img-events (43).JPG"
+                class="img-fluid rounded popup-image"
+                alt="Event Photo 66"
+              />
+              <div
+                class="gallery-overlay d-flex flex-column justify-content-center align-items-center text-white"
+              ></div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="gallery-card position-relative overflow-hidden">
+              <img
+                src="img/top-category/img-events (44).JPG"
+                class="img-fluid rounded popup-image"
+                alt="Event Photo 66"
+              />
+              <div
+                class="gallery-overlay d-flex flex-column justify-content-center align-items-center text-white"
+              ></div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="gallery-card position-relative overflow-hidden">
+              <img
+                src="img/top-category/img-events (45).JPG"
+                class="img-fluid rounded popup-image"
+                alt="Event Photo 66"
+              />
+              <div
+                class="gallery-overlay d-flex flex-column justify-content-center align-items-center text-white"
+              ></div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="gallery-card position-relative overflow-hidden">
+              <img
+                src="img/top-category/img-events (46).JPG"
+                class="img-fluid rounded popup-image"
+                alt="Event Photo 66"
+              />
+              <div
+                class="gallery-overlay d-flex flex-column justify-content-center align-items-center text-white"
+              ></div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="gallery-card position-relative overflow-hidden">
+              <img
+                src="img/top-category/img-events (47).JPG"
+                class="img-fluid rounded popup-image"
+                alt="Event Photo 66"
+              />
+              <div
+                class="gallery-overlay d-flex flex-column justify-content-center align-items-center text-white"
+              ></div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="gallery-card position-relative overflow-hidden">
+              <img
+                src="img/top-category/img-events (48).JPG"
+                class="img-fluid rounded popup-image"
+                alt="Event Photo 66"
+              />
+              <div
+                class="gallery-overlay d-flex flex-column justify-content-center align-items-center text-white"
+              ></div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="gallery-card position-relative overflow-hidden">
+              <img
+                src="img/top-category/img-events (49).JPG"
+                class="img-fluid rounded popup-image"
+                alt="Event Photo 66"
+              />
+              <div
+                class="gallery-overlay d-flex flex-column justify-content-center align-items-center text-white"
+              ></div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="gallery-card position-relative overflow-hidden">
+              <img
+                src="img/top-category/img-events (50).JPG"
+                class="img-fluid rounded popup-image"
+                alt="Event Photo 66"
+              />
+              <div
+                class="gallery-overlay d-flex flex-column justify-content-center align-items-center text-white"
+              ></div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="gallery-card position-relative overflow-hidden">
+              <img
+                src="img/top-category/img-events (51).JPG"
+                class="img-fluid rounded popup-image"
+                alt="Event Photo 66"
+              />
+              <div
+                class="gallery-overlay d-flex flex-column justify-content-center align-items-center text-white"
+              ></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="gallery-card position-relative overflow-hidden">
+              <img
+                src="img/top-category/img-events (52).JPG"
+                class="img-fluid rounded popup-image"
+                alt="Event Photo 66"
+              />
+              <div
+                class="gallery-overlay d-flex flex-column justify-content-center align-items-center text-white"
+              ></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="gallery-card position-relative overflow-hidden">
+              <img
+                src="img/top-category/img-events (53).JPG"
+                class="img-fluid rounded popup-image"
+                alt="Event Photo 66"
+              />
+              <div
+                class="gallery-overlay d-flex flex-column justify-content-center align-items-center text-white"
+              ></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="gallery-card position-relative overflow-hidden">
+              <img
+                src="img/top-category/img-events (54).JPG"
+                class="img-fluid rounded popup-image"
+                alt="Event Photo 66"
+              />
+              <div
+                class="gallery-overlay d-flex flex-column justify-content-center align-items-center text-white"
+              ></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="gallery-card position-relative overflow-hidden">
+              <img
+                src="img/top-category/img-events (55).JPG"
+                class="img-fluid rounded popup-image"
+                alt="Event Photo 66"
+              />
+              <div
+                class="gallery-overlay d-flex flex-column justify-content-center align-items-center text-white"
+              ></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="gallery-card position-relative overflow-hidden">
+              <img
+                src="img/top-category/img-events (56).JPG"
+                class="img-fluid rounded popup-image"
+                alt="Event Photo 66"
+              />
+              <div
+                class="gallery-overlay d-flex flex-column justify-content-center align-items-center text-white"
+              ></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="gallery-card position-relative overflow-hidden">
+              <img
+                src="img/top-category/img-events (57).JPG"
+                class="img-fluid rounded popup-image"
+                alt="Event Photo 66"
+              />
+              <div
+                class="gallery-overlay d-flex flex-column justify-content-center align-items-center text-white"
+              ></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="gallery-card position-relative overflow-hidden">
+              <img
+                src="img/top-category/img-events (58).JPG"
+                class="img-fluid rounded popup-image"
+                alt="Event Photo 66"
+              />
+              <div
+                class="gallery-overlay d-flex flex-column justify-content-center align-items-center text-white"
+              ></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="gallery-card position-relative overflow-hidden">
+              <img
+                src="img/top-category/img-events (59).JPG"
+                class="img-fluid rounded popup-image"
+                alt="Event Photo 66"
+              />
+              <div
+                class="gallery-overlay d-flex flex-column justify-content-center align-items-center text-white"
+              ></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="gallery-card position-relative overflow-hidden">
+              <img
+                src="img/top-category/img-events (60).JPG"
+                class="img-fluid rounded popup-image"
+                alt="Event Photo 66"
+              />
+              <div
+                class="gallery-overlay d-flex flex-column justify-content-center align-items-center text-white"
+              ></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="gallery-card position-relative overflow-hidden">
+              <img
+                src="img/top-category/img-events (61).JPG"
+                class="img-fluid rounded popup-image"
+                alt="Event Photo 66"
+              />
+              <div
+                class="gallery-overlay d-flex flex-column justify-content-center align-items-center text-white"
+              ></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="gallery-card position-relative overflow-hidden">
+              <img
+                src="img/top-category/img-events (62).JPG"
+                class="img-fluid rounded popup-image"
+                alt="Event Photo 66"
+              />
+              <div
+                class="gallery-overlay d-flex flex-column justify-content-center align-items-center text-white"
+              ></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="gallery-card position-relative overflow-hidden">
+              <img
+                src="img/top-category/img-events (63).JPG"
+                class="img-fluid rounded popup-image"
+                alt="Event Photo 66"
+              />
+              <div
+                class="gallery-overlay d-flex flex-column justify-content-center align-items-center text-white"
+              ></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="gallery-card position-relative overflow-hidden">
+              <img
+                src="img/top-category/img-events (64).JPG"
+                class="img-fluid rounded popup-image"
+                alt="Event Photo 66"
+              />
+              <div
+                class="gallery-overlay d-flex flex-column justify-content-center align-items-center text-white"
+              ></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="gallery-card position-relative overflow-hidden">
+              <img
+                src="img/top-category/img-events (65).JPG"
+                class="img-fluid rounded popup-image"
+                alt="Event Photo 66"
+              />
+              <div
+                class="gallery-overlay d-flex flex-column justify-content-center align-items-center text-white"
+              ></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="gallery-card position-relative overflow-hidden">
+              <img
+                src="img/top-category/img-events (66).JPG"
+                class="img-fluid rounded popup-image"
+                alt="Event Photo 66"
+              />
+              <div
+                class="gallery-overlay d-flex flex-column justify-content-center align-items-center text-white"
+              ></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="gallery-card position-relative overflow-hidden">
+              <img
+                src="img/top-category/img-events (67).JPG"
+                class="img-fluid rounded popup-image"
+                alt="Event Photo 66"
+              />
+              <div
+                class="gallery-overlay d-flex flex-column justify-content-center align-items-center text-white"
+              ></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="gallery-card position-relative overflow-hidden">
+              <img
+                src="img/top-category/img-events (68).JPG"
+                class="img-fluid rounded popup-image"
+                alt="Event Photo 66"
+              />
+              <div
+                class="gallery-overlay d-flex flex-column justify-content-center align-items-center text-white"
+              ></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="gallery-card position-relative overflow-hidden">
+              <img
+                src="img/top-category/img-events (69).JPG"
+                class="img-fluid rounded popup-image"
+                alt="Event Photo 66"
+              />
+              <div
+                class="gallery-overlay d-flex flex-column justify-content-center align-items-center text-white"
+              ></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="gallery-card position-relative overflow-hidden">
+              <img
+                src="img/top-category/img-events (70).JPG"
+                class="img-fluid rounded popup-image"
+                alt="Event Photo 66"
+              />
+              <div
+                class="gallery-overlay d-flex flex-column justify-content-center align-items-center text-white"
+              ></div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="gallery-card position-relative overflow-hidden">
+              <img
+                src="img/top-category/img-events (71).JPG"
+                class="img-fluid rounded popup-image"
+                alt="Event Photo 66"
+              />
+              <div
+                class="gallery-overlay d-flex flex-column justify-content-center align-items-center text-white"
+              ></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="gallery-card position-relative overflow-hidden">
+              <img
+                src="img/top-category/img-events (72).JPG"
+                class="img-fluid rounded popup-image"
+                alt="Event Photo 66"
+              />
+              <div
+                class="gallery-overlay d-flex flex-column justify-content-center align-items-center text-white"
+              ></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="gallery-card position-relative overflow-hidden">
+              <img
+                src="img/top-category/img-events (73).JPG"
+                class="img-fluid rounded popup-image"
+                alt="Event Photo 66"
+              />
+              <div
+                class="gallery-overlay d-flex flex-column justify-content-center align-items-center text-white"
+              ></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="gallery-card position-relative overflow-hidden">
+              <img
+                src="img/top-category/img-events (74).JPG"
+                class="img-fluid rounded popup-image"
+                alt="Event Photo 66"
+              />
+              <div
+                class="gallery-overlay d-flex flex-column justify-content-center align-items-center text-white"
+              ></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="gallery-card position-relative overflow-hidden">
+              <img
+                src="img/top-category/img-events (75).JPG"
+                class="img-fluid rounded popup-image"
+                alt="Event Photo 66"
+              />
+              <div
+                class="gallery-overlay d-flex flex-column justify-content-center align-items-center text-white"
+              ></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="gallery-card position-relative overflow-hidden">
+              <img
+                src="img/top-category/img-events (76).JPG"
+                class="img-fluid rounded popup-image"
+                alt="Event Photo 66"
+              />
+              <div
+                class="gallery-overlay d-flex flex-column justify-content-center align-items-center text-white"
+              ></div>
+            </div>
+          </div>
+
+          <!-- start date here 30/05/2025 -->
+
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="gallery-card position-relative overflow-hidden">
+              <img
+                src="img/top-category/img-events-77.jpeg"
+                class="img-fluid rounded popup-image"
+                alt="Event Photo 66"
+              />
+              <div
+                class="gallery-overlay d-flex flex-column justify-content-center align-items-center text-white"
+              ></div>
+            </div>
+          </div>
+
+          <!-- Continue the same pattern until 2931 -->
+
+          <!-- Repeat till 2937 -->
+        </div>
+        <!-- Loop End -->
+
+        <!-- Call-to-Action Section -->
+        <div class="text-center mt-5 mb-4">
+          <h5 class="text-dark fw-bold">📢 Share Your Best Moments!</h5>
+          <p class="text-secondary">
+            Got snaps worth sharing? Tag us on Instagram @GIAofficial with
+            #GIAUnfiltered or DM us directly!
+          </p>
+          <a href="view-all-photos.html" class="btn btn-secondary btn-lg me-2"
+            >View All Photos</a
+          >
+          <a href="events.html" class="btn btn-primary btn-lg"
+            >Discover More Events</a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- GIA Gallery Page End -->
+    <!-- Footer Start -->
+    <div class="container-fluid footer py-3 wow fadeIn" data-wow-delay="0.2s">
+      <div class="container py-2">
+        <div class="row g-5">
+          <div class="col-md-6 col-lg-6 col-xl-2">
+            <div class="footer-item d-flex flex-column">
+              <div class="footer-item">
+                <img src="img/logo.png" class="img-fluid logo" alt="" />
+                <p class="mb-2">"Uniting Industries, Igniting Growth!"</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6 col-xl-3">
+            <div class="footer-item d-flex flex-column">
+              <h4 class="text-white mb-4">Quick Links</h4>
+              <a href="event.html"
+                ><i class="fas fa-angle-right me-2"></i>Event Calendar</a
+              >
+              <a href="gallery.html"
+                ><i class="fas fa-angle-right me-2"></i>Photo Gallery</a
+              >
+              <a href="blog.html"
+                ><i class="fas fa-angle-right me-2"></i>Blogs</a
+              >
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6 col-xl-4">
+            <div class="footer-item d-flex flex-column">
+              <h4 class="text-white mb-4">Contact Info</h4>
+              <a href=""><i class="fas fa-phone me-2"></i>+91 96259 66492</a>
+              <a href=""
+                ><i class="fas fa-envelope me-2"></i> info@giaonline.org</a
+              >
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6 col-xl-3">
+            <div class="footer-item d-flex flex-column">
+              <h4 class="text-white mb-4">Address</h4>
+              <div class="footer-btn d-flex align-items-center">
+                <a href=""
+                  ><i class="fa fa-map-marker-alt me-2"></i> G.I.A. House,
+                  G.I.A. Marg, Opp. Sector 14, I.D.C, Mehrauli Road,
+                  Gurugram.</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-4">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <div class="col-md-6 text-center text-md-start mb-md-0">
+            <span class="text-body"
+              >Copyright © 2024 Gurgaon Industrial Association. All Rights
+              Reserved.</span
+            >
+          </div>
+          <div class="col-md-6 text-center text-md-end text-body">
+            Designed By
+            <a class="border-bottom text-white" href="#">Stratzic</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Copyright End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-secondary btn-lg-square back-to-top"
+      ><i class="fa fa-arrow-up"></i
+    ></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Include Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".promotionalslider_wrapper").slick({
+          infinite: false,
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          autoplay: false,
+          responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+              },
+            },
+          ],
+        });
+      });
+    </script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        slidesPerView: 3, // Show 3 slides at a time
+        spaceBetween: 20,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          1024: { slidesPerView: 3 }, // 3 slides on desktop
+          768: { slidesPerView: 2 }, // 2 slides on tablet
+          480: { slidesPerView: 1 }, // 1 slide on mobile
+        },
+      });
+    </script>
+
+    <script>
+      const galleryImages = document.querySelectorAll(".gallery-img");
+      const fullscreenOverlay = document.getElementById("fullscreenOverlay");
+      const fullscreenImg = document.getElementById("fullscreenImg");
+
+      galleryImages.forEach((img) => {
+        img.addEventListener("click", () => {
+          fullscreenImg.src = img.src;
+          fullscreenOverlay.style.display = "flex";
+        });
+      });
+
+      function closeFullscreen() {
+        fullscreenOverlay.style.display = "none";
+      }
+    </script>
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const popup = document.getElementById("imagePopup");
+        const popupImg = document.getElementById("popupImg");
+        const closeBtn = document.getElementById("closePopup");
+        const imageElements = document.querySelectorAll(".popup-image");
+
+        imageElements.forEach((img) => {
+          img.addEventListener("click", () => {
+            popup.style.display = "flex";
+            popupImg.src = img.src;
+          });
+        });
+
+        closeBtn.addEventListener("click", () => {
+          popup.style.display = "none";
+        });
+
+        popup.addEventListener("click", (e) => {
+          if (e.target === popup) {
+            popup.style.display = "none";
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Gallery || Gurgaon Industrial Association</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/gallery.css" rel="stylesheet" />
+    <link href="css/gallery.scss" rel="stylesheet" />
+    <!-- CSS for Styling -->
+    <style>
+      @media (max-width: 480px) {
+        .swiper-slide img {
+          width: 100%;
+          max-width: 300px; /* Ensures same size for all images */
+          height: 100px; /* Fixed height for uniformity */
+          object-fit: cover; /* Ensures images maintain aspect ratio */
+          border-radius: 10px;
+        }
+        .category-overlay h5 {
+          margin-top: 120px;
+          font-weight: 800;
+        }
+        .gallery-overlay h5 {
+          margin-top: 10px !important;
+        }
+       
+      }
+      .category-overlay h5 {
+          margin-top: 120px;
+          font-weight: 800;
+        }
+    </style>
+  </head>
+
+  <body>
+    <!-- Spinner Start -->
+    <div
+      id="spinner"
+      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+    >
+      <div
+        class="spinner-border text-primary"
+        style="width: 3rem; height: 3rem"
+        role="status"
+      >
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+    <!-- Spinner End -->
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid sticky-top px-0">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-light">
+        <a href="index.html" class="navbar-brand mobilelogo">
+          <img src="img/logo.png" class="img-fluid logo" alt="" />
+          <a class="img-fluid mobilelogotxt"
+            ><h6><b>Gurgaon Industrial Association</b></h6></a
+          >
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+        >
+          <span class="fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav ms-auto pt-2 pt-lg-0">
+            <a href="index.html" class="nav-item nav-link">Home</a>
+            <a href="about.html" class="nav-item nav-link">About Us</a>
+            <a href="event.html" class="nav-item nav-link">Event</a>
+            <a href="leadership.html" class="nav-item nav-link"
+              >Governing Body</a
+            >
+            <a href="glorious-past.html" class="nav-item nav-link"
+              >Glorious Past</a
+            >
+            <a href="hall-booking.html" class="nav-item nav-link"
+              >Hall Booking</a
+            >
+            <a href="membership.html" class="nav-item nav-link">Membership</a>
+            <a href="gallery.html" class="nav-item nav-link active">Gallery</a>
+            <a href="blog.html" class="nav-item nav-link">Blog</a>
+          </div>
+          <div
+            class="d-flex align-items-center flex-nowrap pt-3 pt-lg-0 ms-lg-2"
+          >
+            <a
+              href="contact.html"
+              class="btn btn-secondary py-2 px-4 ms-3 flex-wrap flex-sm-shrink-0"
+              >Contact us</a
+            >
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- Navbar & Hero End -->
+    <!-- Modal Search Start -->
+    <div
+      class="modal fade"
+      id="searchModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content rounded-0">
+          <div class="modal-header">
+            <h4 class="modal-title mb-0" id="exampleModalLabel">
+              Search by keyword
+            </h4>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body d-flex align-items-center">
+            <div class="input-group w-100 mx-auto d-flex">
+              <input
+                type="search"
+                class="form-control p-3"
+                placeholder="keywords"
+                aria-describedby="search-icon-1"
+              />
+              <span id="search-icon-1" class="input-group-text p-3"
+                ><i class="fa fa-search"></i
+              ></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Search End -->
+    <!-- Header Start -->
+    <div class="container-fluid bg-breadcrumb">
+      <div class="container text-center py-5" style="max-width: 900px">
+        <h4
+          class="text-white display-4 mb-4 wow fadeInDown"
+          data-wow-delay="0.1s"
+        >
+          Our Gallery
+        </h4>
+      </div>
+    </div>
+    <!-- Header End -->
+
+    <!-- GIA Gallery Section Start -->
+    <div class="container-fluid" style="background-color: rgb(227, 240, 236)">
+      <div class="container mb-3">
+        <!-- Header Section -->
+        <div class="text-center mb-5">
+          <h2 class="display-4 text-capitalize">
+            Welcome to the Hall of Fame!
+          </h2>
+          <p class="fs-5">
+            This isn’t just a gallery—it’s a vibe check! Dive into the coolest
+            moments, candid snaps, and straight-up iconic memories from GIA’s
+            epic events. Each event is packed with its own energy and stories,
+            and we’ve got it all captured just for you. So, get ready to scroll
+            through and relive the best moments of the GIA journey!
+          </p>
+        </div>
+        <!-- Gallery Section with Tabs and Popup -->
+        <div class="gallery-section container mt-5">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="#"><img src="img/gallery.jpg" alt="Category 1" /> </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#"><img src="img/gallery1.jpg" alt="Category 2" /> </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#"><img src="img/gallery2.jpg" alt="Category 3" /> </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#"><img src="img/gallery3.jpg" alt="Category 4" /> </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#"><img src="img/gallery4.jpg" alt="Category 5" /> </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#"><img src="img/gallery5.jpg" alt="Category 6" /> </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#"><img src="img/gallery6.jpg" alt="Category 6" /> </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#"><img src="img/gallery4.jpg" alt="Category 6" /> </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#"><img src="img/gallery8.jpg" alt="Category 6" /> </a>
+              </div>
+            </div>
+
+            <!-- Navigation Buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+      <!-- GIA Gallery Section End -->
+    </div>
+    <!-- Top 3 Categories Section -->
+    <div class="top-categories container mt-5">
+      <h2 class="text-center mb-4">Top Categories</h2>
+      <div class="row g-4">
+        <!-- Category 1 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="category-card position-relative">
+            <a href="event-gallery.html">
+              <img
+                src="img/top-category/category-MLA.jpeg"
+                class="img-fluid rounded shadow-sm category-hover"
+                alt="Category 1"
+              />
+              <div
+                class="category-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
+              >
+                <h5 class="text-white p-2 tsttt py-5">
+                  GIA Delegation was invited in an event where Hon. Chief
+                  Minister of Haryana Sh. Nayab Saini was the Chief Guest
+                </h5>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- Category 2 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="category-card position-relative">
+            <a href="press-gallery.html">
+              <img
+                src="img/Press-release-23-05-2025/Navodya Times-gallery.jpg"
+                class="img-fluid rounded shadow-sm category-hover"
+                alt="press release"
+              />
+              <div
+                class="category-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
+              >
+                <h5 class="text-white tsttt">Press Release</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- Current Affairs -->
+        <div class="col-lg-4 col-md-6">
+          <div class="category-card position-relative">
+            <a href="current-affairs.html">
+              <img
+                src="img/Current Affairs/Current Affairs (2).jpeg"
+                class="img-fluid rounded shadow-sm category-hover"
+                alt="Current Affairs"
+              />
+              <div
+                class="category-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
+              >
+                <h5 class="text-white tsttt">Current Affairs</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Custom CSS -->
+
+    <!-- GIA Gallery Page Start -->
+    <div class="container-fluid py-5 bg-light">
+      <div class="container">
+        <!-- Page Header -->
+        <div class="text-center mb-5">
+          <h1 class="text-uppercase text-dark fw-bold">📸 Event Gallery</h1>
+          <p class="text-secondary fs-5">
+            Experience the moments from our events. Hover over the images to
+            explore more!
+          </p>
+        </div>
+
+        <!-- Gallery Section -->
+        <div class="row g-4">
+          <!-- Industrial Expo 2023 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="gallery-card position-relative overflow-hidden">
+              <a
+              href="Industrial-expo.html"
+              class="btn text-black-50 btn-outline-light btn-sm"
+              >
+              <img
+                src="img/gallery8.jpg"
+                class="img-fluid rounded"
+                alt="Industrial Expo 2023"
+              />
+              <div
+                class="gallery-overlay d-flex flex-column justify-content-center align-items-center text-white"
+              >
+                <h5 class="fw-bold">Industrial Expo 2023</h5>
+                <p class="small">January 2023</p>
+               </a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Green Energy Summit 2023 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="gallery-card position-relative overflow-hidden">
+             
+              <a href="gallery.html" class="btn btn-outline-light btn-sm"
+              > <img
+                src="img/gallery6.jpg"
+                class="img-fluid rounded"
+                alt="Green Energy Summit 2023"
+              />
+              <div
+                class="gallery-overlay d-flex flex-column justify-content-center align-items-center text-white"
+              >
+                <h5 class="fw-bold">Green Energy Summit 2023</h5>
+                <p class="small">October 2023</p>
+                </a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Women in Industry Workshop 2023 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="gallery-card position-relative overflow-hidden">
+             
+              <a href="gallery.html" class="btn btn-outline-light btn-sm"
+              > <img
+                src="img/gallery2.jpg"
+                class="img-fluid rounded"
+                alt="Women in Industry Workshop 2023"
+              />
+              <div
+                class="gallery-overlay d-flex flex-column justify-content-center align-items-center text-white"
+              >
+                <h5 class="fw-bold">Women in Industry Workshop 2023</h5>
+                <p class="small">March 2023</p>
+                </a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Call-to-Action Section -->
+        <div class="text-center mt-5">
+          <h5 class="text-dark fw-bold">📢 Share Your Best Moments!</h5>
+          <p class="text-secondary">
+            Got snaps worth sharing? Tag us on Instagram @GIAofficial with
+            #GIAUnfiltered or DM us directly!
+          </p>
+          <a href="view-all-photos.html" class="btn btn-secondary btn-lg me-2"
+            >View All Photos</a
+          >
+          <a href="events.html" class="btn btn-primary btn-lg"
+            >Discover More Events</a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- GIA Gallery Page End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer py-3 wow fadeIn" data-wow-delay="0.2s">
+      <div class="container py-2">
+        <div class="row g-5">
+          <div class="col-md-6 col-lg-6 col-xl-2">
+            <div class="footer-item d-flex flex-column">
+              <div class="footer-item">
+                <img src="img/logo.png" class="img-fluid logo" alt="" />
+                <p class="mb-2">"Uniting Industries, Igniting Growth!"</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6 col-xl-3">
+            <div class="footer-item d-flex flex-column">
+              <h4 class="text-white mb-4">Quick Links</h4>
+              <a href="event.html"
+                ><i class="fas fa-angle-right me-2"></i>Event Calendar</a
+              >
+              <a href="gallery.html"
+                ><i class="fas fa-angle-right me-2"></i>Photo Gallery</a
+              >
+              <a href="blog.html"
+                ><i class="fas fa-angle-right me-2"></i>Blogs</a
+              >
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6 col-xl-4">
+            <div class="footer-item d-flex flex-column">
+              <h4 class="text-white mb-4">Contact Info</h4>
+              <a href=""><i class="fas fa-phone me-2"></i>+91 96259 66492</a>
+              <a href=""
+                ><i class="fas fa-envelope me-2"></i> info@giaonline.org</a
+              >
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6 col-xl-3">
+            <div class="footer-item d-flex flex-column">
+              <h4 class="text-white mb-4">Address</h4>
+              <div class="footer-btn d-flex align-items-center">
+                <a href=""
+                  ><i class="fa fa-map-marker-alt me-2"></i> G.I.A. House,
+                  G.I.A. Marg, Opp. Sector 14, I.D.C, Mehrauli Road,
+                  Gurugram.</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-4">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <div class="col-md-6 text-center text-md-start mb-md-0">
+            <span class="text-body"
+              >Copyright © 2024 Gurgaon Industrial Association. All Rights
+              Reserved.</span
+            >
+          </div>
+          <div class="col-md-6 text-center text-md-end text-body">
+            Designed By
+            <a class="border-bottom text-white" href="#">Stratzic</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Copyright End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-secondary btn-lg-square back-to-top"
+      ><i class="fa fa-arrow-up"></i
+    ></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Include Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".promotionalslider_wrapper").slick({
+          infinite: false,
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          autoplay: false,
+          responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+              },
+            },
+          ],
+        });
+      });
+    </script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        slidesPerView: 3, // Show 3 slides at a time
+        spaceBetween: 20,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          1024: { slidesPerView: 3 }, // 3 slides on desktop
+          768: { slidesPerView: 2 }, // 2 slides on tablet
+          480: { slidesPerView: 1 }, // 1 slide on mobile
+        },
+      });
+    </script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

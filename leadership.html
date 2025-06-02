@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Governing Body || Gurgaon Industrial Association</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+
+    <style>
+      .hover-shadow:hover {
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+        transform: translateY(-5px);
+        transition: all 0.3s ease-in-out;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+
+        background-color: #f9f9f9;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 15px;
+      }
+
+      .title {
+        margin-bottom: 20px;
+        font-size: 34px;
+        text-align: center;
+        color: #333;
+        font-weight: 700;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        overflow: hidden;
+      }
+
+      th,
+      td {
+        text-align: left;
+        padding: 12px 15px;
+      }
+
+      th {
+        background-color: #0066cc;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 14px;
+      }
+
+      tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+
+      tr:hover {
+        background-color: #d1ecf1;
+        cursor: pointer;
+      }
+
+      td {
+        border-bottom: 1px solid #ddd;
+      }
+
+      /* Responsive Design */
+      @media screen and (max-width: 768px) {
+        table {
+          font-size: 14px;
+        }
+
+        th,
+        td {
+          padding: 10px;
+        }
+      }
+
+      @media screen and (max-width: 480px) {
+        table {
+          font-size: 12px;
+        }
+
+        th,
+        td {
+          padding: 8px;
+        }
+
+        .title {
+          font-size: 20px;
+        }
+      }
+
+      /* Scrollable Table for Small Devices */
+      .table-container {
+        overflow-x: auto;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Spinner Start -->
+    <div
+      id="spinner"
+      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+    >
+      <div
+        class="spinner-border text-primary"
+        style="width: 3rem; height: 3rem"
+        role="status"
+      >
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+    <!-- Spinner End -->
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid sticky-top px-0">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-light">
+        <a href="index.html" class="navbar-brand mobilelogo">
+          <img src="img/logo.png" class="img-fluid logo" alt="" />
+          <a class="img-fluid mobilelogotxt">
+            <h6><b>Gurgaon Industrial Association</b></h6>
+          </a>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+        >
+          <span class="fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav ms-auto pt-2 pt-lg-0">
+            <a href="index.html" class="nav-item nav-link">Home</a>
+            <a href="about.html" class="nav-item nav-link">About Us</a>
+            <a href="event.html" class="nav-item nav-link">Event</a>
+            <a href="leadership.html" class="nav-item nav-link active"
+              >Governing Body</a
+            >
+            <a href="glorious-past.html" class="nav-item nav-link"
+              >Glorious Past</a
+            >
+            <a href="hall-booking.html" class="nav-item nav-link"
+              >Hall Booking</a
+            >
+
+            <a href="membership.html" class="nav-item nav-link">Membership</a>
+            <a href="gallery.html" class="nav-item nav-link">Gallery</a>
+            <a href="blog.html" class="nav-item nav-link">Blog</a>
+          </div>
+          <div
+            class="d-flex align-items-center flex-nowrap pt-3 pt-lg-0 ms-lg-2"
+          >
+            <a
+              href="contact.html"
+              class="btn btn-secondary py-2 px-4 ms-3 flex-wrap flex-sm-shrink-0"
+              >Contact us</a
+            >
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- Navbar & Hero End -->
+
+    <!-- Modal Search Start -->
+    <div
+      class="modal fade"
+      id="searchModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content rounded-0">
+          <div class="modal-header">
+            <h4 class="modal-title mb-0" id="exampleModalLabel">
+              Search by keyword
+            </h4>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body d-flex align-items-center">
+            <div class="input-group w-75 mx-auto d-flex">
+              <input
+                type="search"
+                class="form-control p-3"
+                placeholder="keywords"
+                aria-describedby="search-icon-1"
+              />
+              <span id="search-icon-1" class="input-group-text p-3"
+                ><i class="fa fa-search"></i
+              ></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Search End -->
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-breadcrumb">
+      <div class="container text-center py-1" style="max-width: 900px">
+        <h4
+          class="text-white display-4 mb-4 wow fadeInDown"
+          data-wow-delay="0.1s"
+        >
+          Governing Body of Gurgaon Industrial Association
+        </h4>
+      </div>
+    </div>
+    <!-- Header End -->
+
+    <!-- Blog Start -->
+    <div class="container-fluid blog py-2" style="background-color: azure">
+      <div class="container pb-3">
+        <!-- Headline News Section -->
+        <div class="mb-5 mt-4" style="background-color: rgb(167, 194, 194)">
+          <div
+            class="headline-item p-4 border rounded shadow-sm position-relative hover-shadow"
+          >
+            <p class="mb-3">
+              Welcome to the Leadership Page of Gurgaon Industrial Association
+              (GIA), showcasing the current leadership team driving GIA forward.
+            </p>
+          </div>
+        </div>
+        <!-- Headline News Section -->
+        <div class="row g-4">
+          <h4 class="mb-2 text-center">
+            Special Invitees of Governing Body GIA Past Presidents
+          </h4>
+
+          <!-- Team Member: Honorary General Secretary -->
+          <div
+            class="col-lg-1 col-md-6 col-sm-12 wow fadeInUp"
+            data-wow-delay="0.6s"
+          ></div>
+          <!-- Team Member: President -->
+          <div
+            class="col-lg-3 col-md-6 col-sm-12 wow fadeInUp"
+            data-wow-delay="0.2s"
+          >
+            <div
+              class="team-item shadow-lg border-0 rounded position-relative overflow-hidden"
+            >
+              <!-- Team Member Info -->
+              <div class="text-center bg-white p-4">
+                <img
+                  src="img/Sh. YOGESH MUNJAL.jpg"
+                  class="img-fluid Officeimg"
+                  alt=""
+                />
+                <h5 class="mb-2 text-primary">Sh. YOGESH MUNJAL</h5>
+              </div>
+            </div>
+          </div>
+
+          <!-- Team Member: Vice President -->
+          <div
+            class="col-lg-3 col-md-6 col-sm-12 wow fadeInUp"
+            data-wow-delay="0.4s"
+          >
+            <div
+              class="team-item shadow-lg border-0 rounded position-relative overflow-hidden"
+            >
+              <div class="text-center bg-white p-3">
+                <img
+                  src="img/Sh. S.B. AGGARWAL.jpg"
+                  class="img-fluid Officeimg"
+                  alt=""
+                />
+                <h5 class="mb-2 text-primary">Sh. S.B. AGGARWAL</h5>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-3 col-md-6 col-sm-12 wow fadeInUp"
+            data-wow-delay="0.4s"
+          >
+            <div
+              class="team-item shadow-lg border-0 rounded position-relative overflow-hidden"
+            >
+              <div class="text-center bg-white p-3">
+                <img
+                  src="img/Sh. V.P. BAJAJ.jpg"
+                  class="img-fluid Officeimg"
+                  alt=""
+                />
+                <h5 class="mb-2 text-primary">Sh. V.P. BAJAJ</h5>
+              </div>
+            </div>
+          </div>
+          <!-- Team Member: Honorary General Secretary -->
+          <div
+            class="col-lg-2 col-md-6 col-sm-12 wow fadeInUp"
+            data-wow-delay="0.6s"
+          ></div>
+        </div>
+        <div class="row g-4 mt-5">
+          <h4 class="mb-2 text-center">Office Bearers</h4>
+
+          <!-- Team Member: Honorary General Secretary -->
+          <div
+            class="col-lg-3 col-md-6 col-sm-12 wow fadeInUp"
+            data-wow-delay="0.6s"
+          ></div>
+          <!-- Team Member: President -->
+          <div
+            class="col-lg-3 col-md-6 col-sm-12 wow fadeInUp"
+            data-wow-delay="0.2s"
+          >
+            <div
+              class="team-item shadow-lg border-0 rounded position-relative overflow-hidden"
+            >
+              <!-- Team Member Info -->
+              <div class="text-center bg-white p-4">
+                <img
+                  src="img/Shri J.N Mangala.jpg"
+                  class="img-fluid Officeimg"
+                  alt=""
+                />
+                <h5 class="mb-2 text-primary">J.N Mangla</h5>
+                <h6 class="mb-1 text-muted">President, GIA</h6>
+              </div>
+            </div>
+          </div>
+
+          <!-- Team Member: Vice President -->
+          <div
+            class="col-lg-3 col-md-6 col-sm-12 wow fadeInUp"
+            data-wow-delay="0.4s"
+          >
+            <div
+              class="team-item shadow-lg border-0 rounded position-relative overflow-hidden"
+            >
+              <div class="text-center bg-white p-3">
+                <img
+                  src="img/Shri Harvinder.jpeg"
+                  class="img-fluid Officeimg"
+                  alt=""
+                />
+                <h5 class="mb-2 text-primary">Harvinder Pal Singh</h5>
+                <h6 class="mb-1 text-muted">Vice President, GIA</h6>
+              </div>
+            </div>
+          </div>
+
+          <!-- Team Member: Honorary General Secretary -->
+          <div
+            class="col-lg-3 col-md-6 col-sm-12 wow fadeInUp"
+            data-wow-delay="0.6s"
+          ></div>
+        </div>
+        <div class="row g-4 mt-5">
+          <div
+            class="col-lg-1 col-md-6 col-sm-12 wow fadeInUp"
+            data-wow-delay="0.6s"
+          ></div>
+          <!-- Team Member: Honorary General Secretary -->
+          <div
+            class="col-lg-3 col-md-6 col-sm-12 wow fadeInUp"
+            data-wow-delay="0.6s"
+          >
+            <div
+              class="team-item shadow-lg border-0 rounded position-relative overflow-hidden"
+            >
+              <div class="text-center bg-white p-3">
+                <img
+                  src="img/Shri Sumit Rao.jpeg"
+                  class="img-fluid Officeimg"
+                  alt=""
+                />
+                <h5 class="mb-2 text-primary">Sumit Rao</h5>
+                <h6 class="mb-1 text-muted">Honorary General Secretary, GIA</h6>
+              </div>
+            </div>
+          </div>
+
+          <!-- Team Member: Treasurer -->
+          <div
+            class="col-lg-3 col-md-6 col-sm-12 wow fadeInUp"
+            data-wow-delay="0.8s"
+          >
+            <div
+              class="team-item shadow-lg border-0 rounded position-relative overflow-hidden"
+            >
+              <div class="text-center bg-white p-4">
+                <img
+                  src="img/Shri B.K Methi.jpg"
+                  class="img-fluid Officeimg"
+                  alt=""
+                />
+                <h5 class="mb-2 text-primary">B.K Methi</h5>
+                <h6 class="mb-1 text-muted">Treasurer, GIA</h6>
+              </div>
+            </div>
+          </div>
+
+          <!-- Team Member: Treasurer -->
+          <div
+            class="col-lg-3 col-md-6 col-sm-12 wow fadeInUp"
+            data-wow-delay="0.8s"
+          >
+            <div
+              class="team-item shadow-lg border-0 rounded position-relative overflow-hidden"
+            >
+              <div class="text-center bg-white p-4">
+                <img
+                  src="img/Sanjiv Bansal.jpg"
+                  class="img-fluid Officeimg"
+                  alt="Sanjiv Bansal"
+                />
+                <h5 class="mb-2 text-primary">Sanjiv Bansal</h5>
+                <h6 class="mb-1 text-muted">Joint Secretary</h6>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-2 col-md-6 col-sm-12 wow fadeInUp"
+            data-wow-delay="0.6s"
+          ></div>
+        </div>
+      </div>
+      <!-- Blog End -->
+      <div
+        class="container-fluid blog py-2"
+        style="background-color: rgb(240, 208, 147)"
+      >
+        <div class="container pb-3">
+          <div class="row g-4">
+            <h4 class="mb-2 text-center">Managing committee members (MCM)</h4>
+
+            <div
+              class="col-lg-1 col-md-6 col-sm-12 wow fadeInUp"
+              data-wow-delay="0.6s"
+            ></div>
+            <!-- Team Member: President -->
+            <div
+              class="col-lg-3 col-md-6 col-sm-12 wow fadeInUp"
+              data-wow-delay="0.2s"
+            >
+              <div
+                class="team-item shadow-lg border-0 rounded position-relative overflow-hidden"
+              >
+                <!-- Team Member Info -->
+                <div class="text-center bg-white p-4">
+                  <img
+                    src="img/Tarun Wahana.jpeg"
+                    class="img-fluid Officeimg"
+                    alt="Tarun Wadhana"
+                  />
+                  <h5 class="mb-2 text-primary">Tarun Wadhwa</h5>
+                  <h6 class="mb-1 text-muted">MCM</h6>
+                </div>
+              </div>
+            </div>
+
+            <!-- Team Member: Vice President -->
+            <div
+              class="col-lg-3 col-md-6 col-sm-12 wow fadeInUp"
+              data-wow-delay="0.4s"
+            >
+              <div
+                class="team-item shadow-lg border-0 rounded position-relative overflow-hidden"
+              >
+                <div class="text-center bg-white p-3">
+                  <img
+                    src="img/Savita Khanna.jpeg"
+                    class="img-fluid Officeimg"
+                    alt="Savita Khanna"
+                  />
+                  <h5 class="mb-2 text-primary">Savita Khanna</h5>
+                  <h6 class="mb-1 text-muted">MCM</h6>
+                </div>
+              </div>
+            </div>
+
+            <!-- Team Member: Honorary General Secretary -->
+            <div
+              class="col-lg-3 col-md-6 col-sm-12 wow fadeInUp"
+              data-wow-delay="0.6s"
+            >
+              <div
+                class="team-item shadow-lg border-0 rounded position-relative overflow-hidden"
+              >
+                <div class="text-center bg-white p-3">
+                  <img
+                    src="img/Vidya Sagar.jpeg"
+                    class="img-fluid Officeimg"
+                    alt="Vidya Sagar"
+                  />
+                  <h5 class="mb-2 text-primary">Vidya Sagar</h5>
+                  <h6 class="mb-1 text-muted">MCM</h6>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-2 col-md-6 col-sm-12 wow fadeInUp"
+              data-wow-delay="0.6s"
+            ></div>
+
+            <div
+              class="col-lg-1 col-md-6 col-sm-12 wow fadeInUp"
+              data-wow-delay="0.6s"
+            ></div>
+
+            <!-- Team Member: Treasurer -->
+            <div
+              class="col-lg-3 col-md-6 col-sm-12 wow fadeInUp"
+              data-wow-delay="0.8s"
+            >
+              <div
+                class="team-item shadow-lg border-0 rounded position-relative overflow-hidden"
+              >
+                <div class="text-center bg-white p-4">
+                  <img
+                    src="img/Mukul Gupta.jpeg"
+                    class="img-fluid Officeimg"
+                    alt="Mukul Gupta"
+                  />
+                  <h5 class="mb-2 text-primary">Mukul Gupta</h5>
+                  <h6 class="mb-1 text-muted">MCM</h6>
+                </div>
+              </div>
+            </div>
+
+            <!-- Team Member: Treasurer -->
+            <div
+              class="col-lg-3 col-md-6 col-sm-12 wow fadeInUp"
+              data-wow-delay="0.8s"
+            >
+              <div
+                class="team-item shadow-lg border-0 rounded position-relative overflow-hidden"
+              >
+                <div class="text-center bg-white p-4">
+                  <img
+                    src="img/K.S Bhadana.jpg"
+                    class="img-fluid Officeimg"
+                    alt="K.S Bhadana"
+                  />
+                  <h5 class="mb-2 text-primary">K.S Bhadana</h5>
+                  <h6 class="mb-1 text-muted">MCM</h6>
+                </div>
+              </div>
+            </div>
+
+            <!-- Team Member: Treasurer -->
+            <div
+              class="col-lg-3 col-md-6 col-sm-12 wow fadeInUp"
+              data-wow-delay="0.8s"
+            >
+              <div
+                class="team-item shadow-lg border-0 rounded position-relative overflow-hidden"
+              >
+                <div class="text-center bg-white p-4">
+                  <img
+                    src="img/Ravinder Bansal.jpg"
+                    class="img-fluid Officeimg"
+                    alt="Ravinder Bansal"
+                  />
+                  <h5 class="mb-2 text-primary">Ravinder Bansal</h5>
+                  <h6 class="mb-1 text-muted">MCM</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer py-3 wow fadeIn" data-wow-delay="0.2s">
+      <div class="container py-2">
+        <div class="row g-5">
+          <div class="col-md-6 col-lg-6 col-xl-2">
+            <div class="footer-item d-flex flex-column">
+              <div class="footer-item">
+                <img src="img/logo.png" class="img-fluid logo" alt="" />
+                <p class="mb-2">"Uniting Industries, Igniting Growth!"</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6 col-xl-3">
+            <div class="footer-item d-flex flex-column">
+              <h4 class="text-white mb-4">Quick Links</h4>
+              <a href="event.html"
+                ><i class="fas fa-angle-right me-2"></i>Event Calendar</a
+              >
+              <a href="gallery.html"
+                ><i class="fas fa-angle-right me-2"></i>Photo Gallery</a
+              >
+              <a href="blog.html"
+                ><i class="fas fa-angle-right me-2"></i>Blogs</a
+              >
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6 col-xl-4">
+            <div class="footer-item d-flex flex-column">
+              <h4 class="text-white mb-4">Contact Info</h4>
+              <a href=""><i class="fas fa-phone me-2"></i>+91 96259 66492</a>
+              <a href=""
+                ><i class="fas fa-envelope me-2"></i> info@giaonline.org</a
+              >
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6 col-xl-3">
+            <div class="footer-item d-flex flex-column">
+              <h4 class="text-white mb-4">Address</h4>
+              <div class="footer-btn d-flex align-items-center">
+                <a href=""
+                  ><i class="fa fa-map-marker-alt me-2"></i> G.I.A. House,
+                  G.I.A. Marg, Opp. Sector 14, I.D.C, Mehrauli Road,
+                  Gurugram.</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer End -->
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-4">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <div class="col-md-6 text-center text-md-start mb-md-0">
+            <span class="text-body"
+              >Copyright © 2024 Gurgaon Industrial Association. All Rights
+              Reserved.</span
+            >
+          </div>
+          <div class="col-md-6 text-center text-md-end text-body">
+            Designed By
+            <a class="border-bottom text-white" href="#">Stratzic</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Copyright End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-secondary btn-lg-square back-to-top"
+      ><i class="fa fa-arrow-up"></i
+    ></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

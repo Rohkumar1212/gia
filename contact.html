@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Contact us || Gurgaon Industrial Association</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Libraries Stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid sticky-top px-0">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-light">
+            <a href="index.html" class="navbar-brand mobilelogo">
+                <img src="img/logo.png" class="img-fluid logo" alt="">
+                <a class="img-fluid mobilelogotxt">
+                    <h6><b>Gurgaon Industrial Association</b></h6>
+                </a>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto pt-2 pt-lg-0">
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About Us</a>
+                    <a href="event.html" class="nav-item nav-link">Event</a>
+                    <a href="leadership.html" class="nav-item nav-link">Governing Body</a>
+                    <a href="glorious-past.html" class="nav-item nav-link">Glorious Past</a>
+                    <a href="hall-booking.html" class="nav-item nav-link">Hall Booking</a>
+                    <a href="membership.html" class="nav-item nav-link">Membership</a>
+                    <a href="gallery.html" class="nav-item nav-link">Gallery</a>
+                    <a href="blog.html" class="nav-item nav-link">Blog</a>
+                </div>
+                <div class="d-flex align-items-center flex-nowrap pt-3  pt-lg-0 ms-lg-2">
+                    <a href="contact.html" class="btn btn-secondary py-2 px-4 ms-3 flex-wrap flex-sm-shrink-0">Contact
+                        us</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar & Hero End -->
+
+    <!-- Modal Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h4 class="modal-title mb-0" id="exampleModalLabel">Search by keyword</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center">
+                    <div class="input-group w-75 mx-auto d-flex">
+                        <input type="search" class="form-control p-3" placeholder="keywords"
+                            aria-describedby="search-icon-1">
+                        <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Search End -->
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-breadcrumb">
+        <div class="container text-center py-3" style="max-width: 900px;">
+            <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Contact Us</h4>
+
+        </div>
+    </div>
+    <!-- Header End -->
+    <!-- Contact Section Start -->
+    <div class="container-fluid contact-section bg-light py-3">
+        <div class="container py-4">
+            <!-- Header Section -->
+            <div class="text-center mx-auto mb-5" style="max-width: 700px;">
+                <p class="text-uppercase text-primary fw-bold fs-5 mb-1">Let’s Connect</p>
+                <h2 class="display-5 text-dark mb-3">We’d Love to Hear from You!</h2>
+                <p class="text-muted">Have a question, feedback, or partnership idea? Fill out the form below, and we’ll
+                    get back to you promptly.</p>
+            </div>
+
+            <div class="row align-items-start g-5">
+                <!-- Contact Form -->
+                <div class="col-lg-6">
+                    <form action="contactus.php" method="POST" enctype="multipart/form-data"
+                        class="p-4 bg-white shadow rounded">
+                        <h3 class="text-secondary mb-4">Contact Us Form</h3>
+                        <div class="mb-3">
+                            <label for="fullName" class="form-label">Full Name</label>
+                            <input type="text" name="fullName" class="form-control" id="fullName"
+                                placeholder="Your Full Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="emailAddress" class="form-label">Email Address</label>
+                            <input type="email" name="emailAddress" class="form-control" id="emailAddress"
+                                placeholder="Your Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phoneNumber" class="form-label">Phone Number (Optional)</label>
+                            <input type="tel" name="phoneNumber" class="form-control" id="phoneNumber"
+                                placeholder="Your Phone Number">
+                        </div>
+                        <div class="mb-3">
+                            <label for="subject" class="form-label">Subject</label>
+                            <select name="subject" class="form-select" id="subject" required>
+                                <option value="">Choose a Subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="event">Event Inquiry</option>
+                                <option value="membership">Membership Information</option>
+                                <option value="press">Press/Media</option>
+                                <option value="partnership">Partnership Opportunities</option>
+                                <option value="others">Others</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea name="message" class="form-control" id="message" rows="3"
+                                placeholder="Your Message" required></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label>Preferred Contact Method:</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="contactMethod" id="contactEmail"
+                                    value="email" required>
+                                <label class="form-check-label" for="contactEmail">Email</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="contactMethod" id="contactPhone"
+                                    value="phone" required>
+                                <label class="form-check-label" for="contactPhone">Phone</label>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="fileUpload" class="form-label">Attach a File (Optional):</label>
+                            <input class="form-control" type="file" name="fileUpload" id="fileUpload">
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100 py-2">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Contact Information & Map -->
+                <div class="col-lg-6">
+                    <div class="row g-4">
+                        <div class="col-12">
+                            <div class="info-box shadow p-4 d-flex align-items-center bg-white rounded">
+                                <i class="fas fa-map-marker-alt fa-2x text-primary me-3"></i>
+                                <div>
+                                    <h5 class="text-secondary mb-1">Address</h5>
+                                    <p class="mb-0 text-muted">GIA Contact details - G.I.A. House, G.I.A. Marg, Opp.
+                                        Sector 14, I.D.C, Mehrauli Road, Gurugram, Haryana 122001</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="info-box shadow p-4 d-flex align-items-center bg-white rounded">
+                                <i class="fas fa-envelope fa-2x text-primary me-3"></i>
+                                <div>
+                                    <h5 class="text-secondary mb-1">Email Us</h5>
+                                    <p class="mb-0 text-muted">info@giaonline.org</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="info-box shadow p-4 d-flex align-items-center bg-white rounded">
+                                <i class="fas fa-phone-alt fa-2x text-primary me-3"></i>
+                                <div>
+                                    <h5 class="text-secondary mb-1">Phone</h5>
+                                    <p class="mb-0 text-muted">+91 96259 66492</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <iframe class="rounded shadow w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.2921836471387!2d77.0512937!3d28.4707461!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d19ad4dd0b1fb%3A0x83ff33a1983c977e!2sGurgaon%20Industrial%20Association!5e0!3m2!1sen!2sin!4v1744715134960!5m2!1sen!2sin"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"  style="height: 400px; border: none;"></iframe>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        .contact-section {
+            background-color: #f9fafb;
+        }
+
+        .info-box:hover {
+            transform: scale(1.05);
+            transition: 0.3s ease-in-out;
+            background-color: #eef2f7;
+        }
+
+        .info-box i {
+            color: #007bff;
+        }
+
+        form .form-control:focus,
+        form .form-select:focus {
+            border-color: #007bff;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    <!-- Contact Section End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer py-3 wow fadeIn" data-wow-delay="0.2s">
+        <div class="container py-2">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-6 col-xl-2">
+                    <div class="footer-item d-flex flex-column">
+                        <div class="footer-item">
+                            <img src="img/logo.png" class="img-fluid logo" alt="">
+                            <p class="mb-2">"Uniting Industries, Igniting Growth!" </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="text-white mb-4">Quick Links</h4>
+                        <a href="event.html"><i class="fas fa-angle-right me-2"></i>Event Calendar</a>
+                        <a href="gallery.html"><i class="fas fa-angle-right me-2"></i>Photo Gallery</a>
+                        <a href="blog.html"><i class="fas fa-angle-right me-2"></i>Blogs</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-4">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="text-white mb-4">Contact Info</h4>
+                        <a href=""><i class="fas fa-phone me-2"></i>+91 96259 66492</a>
+                        <a href=""><i class="fas fa-envelope me-2"></i> info@giaonline.org</a>
+                        
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="text-white mb-4">Address</h4>
+                        <div class="footer-btn d-flex align-items-center">
+                            <a href=""><i class="fa fa-map-marker-alt me-2"></i> G.I.A. House, G.I.A. Marg, Opp. Sector 14,
+                                I.D.C, Mehrauli Road, Gurugram.</a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-4">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-md-0">
+                    <span class="text-body">Copyright © 2024 Gurgaon Industrial Association. All Rights Reserved.</span>
+                </div>
+                <div class="col-md-6 text-center text-md-end text-body">
+                    Designed By <a class="border-bottom text-white" href="#">Stratzic</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-secondary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

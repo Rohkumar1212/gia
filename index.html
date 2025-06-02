@@ -1,0 +1,1468 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Gurgaon Industrial Association</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Icon Font Stylesheet -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <!-- Libraries Stylesheet -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Template Stylesheet -->
+    <link href="css/index.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Spinner Start -->
+    <div
+      id="spinner"
+      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+    >
+      <div
+        class="spinner-border text-primary"
+        style="width: 3rem; height: 3rem"
+        role="status"
+      >
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid sticky-top px-0">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-light">
+        <a href="index.html" class="navbar-brand mobilelogo">
+          <img src="img/logo.png" class="img-fluid logo" alt="" />
+          <a class="img-fluid mobilelogotxt">
+            <h6><b>Gurgaon Industrial Association</b></h6>
+          </a>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+        >
+          <span class="fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav ms-auto pt-2 pt-lg-0">
+            <a href="index.html" class="nav-item nav-link active">Home</a>
+            <a href="about.html" class="nav-item nav-link">About Us</a>
+            <a href="event.html" class="nav-item nav-link">Event</a>
+            <a href="leadership.html" class="nav-item nav-link"
+              >Governing Body</a
+            >
+            <a href="glorious-past.html" class="nav-item nav-link"
+              >Glorious Past</a
+            >
+            <a href="hall-booking.html" class="nav-item nav-link"
+              >Hall Booking</a
+            >
+            <a href="membership.html" class="nav-item nav-link">Membership</a>
+            <a href="gallery.html" class="nav-item nav-link">Gallery</a>
+            <a href="blog.html" class="nav-item nav-link">Blog</a>
+          </div>
+          <div
+            class="d-flex align-items-center flex-nowrap pt-3 pt-lg-0 ms-lg-2"
+          >
+            <a
+              href="contact.html"
+              class="btn btn-secondary py-2 px-4 ms-3 flex-wrap flex-sm-shrink-0"
+              >Contact us</a
+            >
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- Navbar & Hero End -->
+    <!-- Modal Search Start -->
+    <div
+      class="modal fade"
+      id="searchModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content rounded-0">
+          <div class="modal-header">
+            <h4 class="modal-title mb-0" id="exampleModalLabel">
+              Search by keyword
+            </h4>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body d-flex align-items-center">
+            <div class="input-group w-75 mx-auto d-flex">
+              <input
+                type="search"
+                class="form-control p-3"
+                placeholder="keywords"
+                aria-describedby="search-icon-1"
+              />
+              <span id="search-icon-1" class="input-group-text p-3"
+                ><i class="fa fa-search"></i
+              ></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Search End -->
+    <!-- Carousel Start -->
+    <div class="container-fluid bg-white overflow-hidden px-0">
+      <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+        <ol
+          class="carousel-indicators fadeInUp animate__animated"
+          data-animation="fadeInUp"
+          data-delay="1s"
+          style="animation-delay: 1s"
+        >
+          <li
+            data-bs-target="#carouselId"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="First slide"
+          ></li>
+          <li
+            data-bs-target="#carouselId"
+            data-bs-slide-to="1"
+            aria-label="Second slide"
+          ></li>
+          <li
+            data-bs-target="#carouselId"
+            data-bs-slide-to="2"
+            aria-label="Third slide"
+          ></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item kkk2 active">
+            <div class="carousel-caption text-center">
+              <div class="sliderlogo-wrapper">
+                <img src="img/logo.png" class="sliderlogo" alt="Logo" />
+              </div>
+
+              <p class="text-uppercase text-secondary fs-4 mb-0">
+                Uniting Industries, Igniting Growth!
+              </p>
+
+              <h1 class="display-4 text-capitalize text-black mb-1">
+                Gurgaon Industrial Association<br />
+                Established 1968
+              </h1>
+
+              <p>
+                Join us for an exclusive industry showcase and networking event.
+              </p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img
+              src="img/slider.png"
+              class="img-fluid w-100"
+              alt="Second slide"
+            />
+          </div>
+
+          <div class="carousel-item">
+            <img
+              src="img/slide-3.JPG"
+              class="img-fluid w-100"
+              alt="Third slide"
+            />
+            <div class="carousel-caption">
+              <h1
+                class="display-4 slide-2 text-capitalize text-black mb-1 fadeInUp animate__animated"
+                data-animation="fadeInUp"
+                data-delay="1.3s"
+                style="animation-delay: 1.3s"
+              >
+                Mukesh Sharma ( MLA ) at GIA ( 9th November 2024 )
+              </h1>
+            </div>
+          </div>
+        </div>
+
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselId"
+          data-bs-slide="prev"
+        >
+          <span
+            class="carousel-control-prev-icon btn-lg-square fadeInLeft animate__animated"
+            aria-hidden="true"
+            data-animation="fadeInLeft"
+            data-delay="1.1s"
+            style="animation-delay: 1.3s"
+            ><i class="fas fa-chevron-left fa-2x"></i
+          ></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselId"
+          data-bs-slide="next"
+        >
+          <span
+            class="carousel-control-next-icon btn-lg-square fadeInRight animate__animated"
+            aria-hidden="true"
+            data-animation="fadeInRight"
+            data-delay="1.1s"
+            style="animation-delay: 1.3s"
+            ><i class="fas fa-chevron-right fa-2x"></i
+          ></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <!-- Carousel End -->
+    <!-- About Start -->
+    <div class="container-fluid about py-5">
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <!-- Image Section -->
+          <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.1s">
+            <div class="position-relative">
+              <img
+                src="img/download.jpeg"
+                class="img-fluid rounded w-75 shadow-lg"
+                alt="Image 1"
+              />
+              <img
+                src="img/aboutimg.webp"
+                class="img-fluid rounded w-50 shadow-lg position-absolute top-50 start-50 translate-middle"
+                style="z-index: 2; border: 5px solid #fff"
+                alt="Image 2"
+              />
+              <div class="position-absolute top-0 end-0 w-50 h-50">
+                <img
+                  src="img/59.jpg"
+                  class="img-fluid rounded-circle shadow-lg w-100 h-100"
+                  style="object-fit: cover; border: 5px solid #fff"
+                  alt="Overlay Image"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- Content Section -->
+          <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.1s">
+            <div>
+              <p class="text-uppercase text-primary fw-bold mb-3">Top Trends</p>
+              <h2 class="mb-4 display-6 text-capitalize">
+                What’s Buzzing at GIA?
+              </h2>
+              <p class="mb-4 fs-5">
+                ● “Automation is here! Discover the Future of Smart
+                Manufacturing.”<br />
+                ● “Meet Gurugram’s Industrial Game-Changers.”
+              </p>
+              <div class="border-bottom pb-4 mb-4">
+                <div class="row g-4">
+                  <div class="col-lg-4">
+                    <img
+                      src="img/creative.jpeg"
+                      class="img-fluid rounded shadow-lg"
+                      alt="Creative"
+                    />
+                  </div>
+                  <div class="col-lg-8">
+                    <div class="d-flex align-items-center mb-4">
+                      <i class="fas fa-user-shield fa-3x text-primary"></i>
+                      <h4 class="ms-3 mb-0">Top Trends:</h4>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <i class="fas fa-calendar-alt fa-3x text-primary"></i>
+                      <h4 class="ms-3 mb-0">Featured Event:</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Content Section -->
+        <div class="col-xl-12 wow fadeInRight" data-wow-delay="0.1s">
+          <p class="mb-4 fs-5">
+            <strong>Stay tuned for the upcoming events !</strong>
+          </p>
+          <div
+            class="row gy-2 gx-4 justify-content-between pb-4 feature-item2 feature-item text-center border mb-3 p-4 hover-effect"
+          >
+            <div class="col-md-3">
+              <p>
+                <i class="fas fa-check-circle text-success me-2"></i> 100%
+                Satisfaction
+              </p>
+            </div>
+            <div class="col-md-3">
+              <p>
+                <i class="fas fa-check-circle text-success me-2"></i> Trained
+                Employees
+              </p>
+            </div>
+            <div class="col-md-3">
+              <p>
+                <i class="fas fa-check-circle text-success me-2"></i> Annual
+                Pass Programs
+              </p>
+            </div>
+            <div class="col-md-3">
+              <p>
+                <i class="fas fa-check-circle text-success me-2"></i> Secure and
+                Transparent
+              </p>
+            </div>
+          </div>
+          <div class="text-center">
+            <a
+              class="btn btn-primary rounded-pill text-center px-5 py-3 shadow-lg"
+              href="#"
+              >Discover More</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- About End -->
+
+    <!-- Features Start -->
+    <div
+      class="container-fluid feature bg-light py-2"
+      style="background-color: azure"
+    >
+      <div class="container py-3">
+        <div
+          class="text-center mx-auto pb-3 wow fadeInUp"
+          data-wow-delay="0.2s"
+          style="max-width: 800px"
+        >
+          <p class="text-uppercase text-secondary fs-5 mb-0">Who We Are</p>
+          <h2 class="display-4 text-capitalize mb-3">Our Unique Strengths</h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-3 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="feature-item text-center border p-4 hover-effect">
+              <div
+                class="feature-img bg-danger d-inline-flex p-3 rounded-circle"
+              >
+                <i class="fas fa-building text-white fa-2x"></i>
+              </div>
+              <p class="mb-0 mt-3">
+                “We’re more than an association; we’re the heart of GIR”
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 wow fadeInUp" data-wow-delay="0.4s">
+            <div class="feature-item text-center border p-4 hover-effect">
+              <div
+                class="feature-img bg-warning d-inline-flex p-3 rounded-circle"
+              >
+                <i class="fas fa-road text-white fa-2x"></i>
+              </div>
+              <p class="mb-0 mt-3">
+                Fighting for Better Infrastructure: Building a Stronger Future
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 wow fadeInUp" data-wow-delay="0.6s">
+            <div class="feature-item text-center border p-4 hover-effect">
+              <div
+                class="feature-img bg-success d-inline-flex p-3 rounded-circle"
+              >
+                <i class="fas fa-network-wired text-white fa-2x"></i>
+              </div>
+              <p class="mb-0 mt-3">Bridging industries with opportunities.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 wow fadeInUp" data-wow-delay="0.6s">
+            <div class="feature-item text-center border p-4 hover-effect">
+              <div
+                class="feature-img bg-primary d-inline-flex p-3 rounded-circle"
+              >
+                <i class="fas fa-leaf text-white fa-2x"></i>
+              </div>
+              <p class="mb-0 mt-3">Shaping a greener, brighter future.</p>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="display-4 text-center text-capitalize mt-5 mb-3">
+          Why Join GIA?
+        </h2>
+        <p class="mb-5 mt-3 text-center">“Because Growth Happens Together!”</p>
+        <div class="row g-4">
+          <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="feature-item text-center border p-4 hover-effect">
+              <div
+                class="feature-img bg-success d-inline-flex p-3 rounded-circle"
+              >
+                <i class="fas fa-users text-white fa-2x"></i>
+              </div>
+              <p class="mb-0 mt-3">
+                Connect with the coolest minds in the industry.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+            <div class="feature-item text-center border p-4 hover-effect">
+              <div
+                class="feature-img bg-primary d-inline-flex p-3 rounded-circle"
+              >
+                <i class="fas fa-bullhorn text-white fa-2x"></i>
+              </div>
+              <p class="mb-0 mt-3">
+                Get front-row seats to the latest policy updates
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
+            <div class="feature-item text-center border p-4 hover-effect">
+              <div
+                class="feature-img bg-warning d-inline-flex p-3 rounded-circle"
+              >
+                <i class="fas fa-briefcase text-white fa-2x"></i>
+              </div>
+              <p class="mb-0 mt-3">
+                Tap into exclusive resources that fuel success.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <a href="about.html" class="h4 d-block my-4 mt-5 text-center"
+          >“Let’s turn challenges into milestones—together!” Join the
+          Movement</a
+        >
+      </div>
+    </div>
+    <!-- Features End -->
+
+    <!-- Features Start -->
+    <div class="container-fluid feature bg-light py-4">
+      <div class="container py-4">
+        <div class="row g-4">
+          <!-- About GIA -->
+          <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="feature-item text-center border p-2 hover-effect">
+              <div
+                class="feature-img bg-primary d-inline-flex p-4 rounded-circle"
+              >
+                <i class="fas fa-info-circle text-white fa-2x"></i>
+              </div>
+              <a href="about.html" class="h4 d-block my-4">About GIA</a>
+              <p class="mb-3">
+                "Since its inception, the Gurgaon Industrial Association has
+                championed the cause of industries.
+              </p>
+              <a href="about.html" class="btn btn-secondary btn-sm"
+                >Read More</a
+              >
+            </div>
+          </div>
+          <!-- Upcoming Events -->
+          <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+            <div class="feature-item text-center border p-2 hover-effect">
+              <div
+                class="feature-img bg-danger d-inline-flex p-4 rounded-circle"
+              >
+                <i class="fas fa-calendar-alt text-white fa-2x"></i>
+              </div>
+              <a href="event.html" class="h4 d-block my-4">Upcoming Events</a>
+              <p class="mb-3">
+                "Industrial Expo 2024 | 15th January<br />
+                Gurugram Convention Center"
+              </p>
+              <a href="event.html" class="btn btn-secondary btn-sm mb-3"
+                >Register Now</a
+              >
+            </div>
+          </div>
+
+          <!-- Membership -->
+          <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
+            <div class="feature-item text-center border p-3 hover-effect">
+              <div
+                class="feature-img bg-success d-inline-flex p-4 rounded-circle"
+              >
+                <i class="fas fa-users text-white fa-2x"></i>
+              </div>
+              <a href="membership.html" class="h4 d-block my-4">Membership</a>
+              <p class="mb-3">
+                "Join hands with GIA and grow your business network."
+              </p>
+              <a href="membership.html" class="btn btn-secondary btn-sm"
+                >Register Now</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Features End -->
+
+    <!-- Mission and Vision Start -->
+    <div class="container-fluid feature py-2" style="background-color: #0dcaf0">
+      <div class="container py-2">
+        <!-- About Us Header -->
+        <div
+          class="text-center mx-auto pb-2 wow fadeInUp"
+          data-wow-delay="0.2s"
+          style="max-width: 800px"
+        >
+          <h2 class="display-4 text-capitalize mb-3">Working Committee</h2>
+        </div>
+
+        <div class="row g-4">
+          <!-- Mission Section -->
+          <div class="col-xl-7 wow fadeInLeft" data-wow-delay="0.1s">
+            <div class="about-item-content">
+              <h3 class="text-capitalize mb-3"></h3>
+              <p class="fs-5 mb-4">
+                The GIA working committee is a dedicated team of professionals
+                committed to driving industrial growth and solving key
+                challenges.
+              </p>
+            </div>
+            <div class="about-item-content">
+              <h3 class="text-capitalize mb-3">Committee Profiles:</h3>
+              <p class="fs-5 mb-4">
+                ● President: <strong>J. N. Mangla</strong> <br />
+                ○ “Leading GIA with a vision for innovation and progress.”<br />
+                ○ Profile: Industry leader with 20+ years of experience in
+                manufacturing.<br />
+                ● Vice-President: <strong>Shri Harvinder Pal Singh</strong
+                ><br />
+                ○ “Advocating for policy changes to uplift the industry.”
+              </p>
+            </div>
+          </div>
+
+          <!-- Vision Section -->
+          <div class="col-xl-5 wow fadeInRight" data-wow-delay="0.1s">
+            <div class="about-item-content rounded">
+              <img
+                src="img/comm.jpg"
+                alt="Our Vision"
+                class="img-fluid rounded"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Mission and Vision End -->
+
+    <!-- Features Start -->
+    <div class="container-fluid feature bg-gradient py-5">
+      <div class="container py-5">
+        <div
+          class="text-center mx-auto pb-4 wow fadeInUp"
+          data-wow-delay="0.2s"
+          style="max-width: 800px"
+        >
+          <h2 class="display-4 text-dark mb-3">Advocacy & Initiatives</h2>
+          <p class="text-white fs-5 mb-0">
+            Our dedication towards shaping industry standards and policies.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Left Column -->
+          <div class="col-xl-12 wow fadeInLeft" data-wow-delay="0.2s">
+            <div
+              class="card shadow-lg border-0 rounded-lg bg-white p-4 hover-shadow-lg"
+            >
+              <div class="row align-items-center">
+                <div class="col-md-12 col-lg-6">
+                  <div class="d-flex flex-column align-items-start">
+                    <p class="fs-5 text-primary">
+                      <i class="fas fa-gavel me-3"></i
+                      ><strong>Policy Advocacy</strong>
+                    </p>
+                    <ul class="list-unstyled fs-6">
+                      <li>
+                        <i class="fas fa-check-circle text-success me-3"></i>
+                        Regular dialogues with government bodies on industry
+                        matters like taxation, infrastructure, etc.
+                      </li>
+                      <li>
+                        <i class="fas fa-trophy text-warning me-3"></i>
+                        <strong>Success Story:</strong> Reduced GST rates for
+                        SMEs across the region.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-12 col-lg-6 mt-4 mt-lg-0">
+                  <img
+                    src="img/creative-1.png"
+                    alt="Policy Image"
+                    class="img-fluid rounded-lg shadow-sm"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Initiatives Section -->
+          <div class="col-xl-12 wow fadeInRight" data-wow-delay="0.4s">
+            <div
+              class="card shadow-lg border-0 rounded-lg bg-white p-4 hover-shadow-lg"
+            >
+              <div class="row align-items-center">
+                <div class="col-md-12 col-lg-6">
+                  <div class="d-flex flex-column align-items-start">
+                    <p class="fs-5 text-primary">
+                      <i class="fas fa-cogs me-3"></i
+                      ><strong>Our Initiatives</strong>
+                    </p>
+                    <ul class="list-unstyled fs-6">
+                      <li>
+                        <i class="fas fa-leaf text-success me-3"></i>
+                        <strong>Green Industry Movement:</strong><br />
+                        Promoting sustainable, eco-friendly practices in
+                        manufacturing.
+                      </li>
+                      <li>
+                        <i class="fas fa-users text-warning me-3"></i>
+                        <strong>Skill Development Programs:</strong><br />
+                        Workshops and seminars on AI, robotics, and advanced
+                        manufacturing techniques.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-12 col-lg-6 mt-4 mt-lg-0">
+                  <img
+                    src="img/initimg.jpg"
+                    alt="Initiative Image"
+                    class="img-fluid rounded-lg shadow-sm"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Membership CTA -->
+          <div class="col-xl-12 wow fadeInUp" data-wow-delay="0.6s">
+            <div
+              class="card border-0 rounded-lg bg-gradient p-4 text-center text-white"
+            >
+              <div class="card-body">
+                <h4 class="h4 mb-3">
+                  <i class="fas fa-users-cog me-2"></i> Join Our Community
+                </h4>
+                <p class="fs-5 mb-4">
+                  Become part of a progressive network of industry leaders and
+                  innovators.
+                </p>
+                <a href="membership.html" class="btn btn-secondary px-4 py-2"
+                  >See Our Membership</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Features End -->
+
+    <!-- Mission and Vision Start -->
+    <div class="container-fluid feature py-2" style="background-color: #0dcaf0">
+      <div class="container py-2">
+        <!-- About Us Header -->
+        <div
+          class="text-center mx-auto pb-2 wow fadeInUp"
+          data-wow-delay="0.2s"
+          style="max-width: 800px"
+        >
+          <h2 class="display-4 text-capitalize mb-3">Our Mission & Vision</h2>
+        </div>
+
+        <div class="row g-4">
+          <!-- Mission Section -->
+          <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.1s">
+            <div class="about-item-content">
+              <h3 class="text-capitalize mb-3">Our Mission</h3>
+              <p class="fs-5 mb-4">
+                To create an ecosystem where industries can thrive sustainably
+                and collaboratively,<br />
+                driving Gurgaon’s industrial growth story forward.
+              </p>
+            </div>
+            <div class="about-item-content">
+              <h3 class="text-capitalize mb-3">Our Vision</h3>
+              <p class="fs-5 mb-4">
+                To be the trusted voice and driving force behind Gurgaon’s
+                industrial transformation.
+              </p>
+            </div>
+          </div>
+
+          <!-- Vision Section -->
+          <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.1s">
+            <div class="about-item-content rounded">
+              <img
+                src="img/vm.jpg"
+                alt="Our Vision"
+                class="img-fluid rounded"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Mission and Vision End -->
+
+    <!-- Services Start -->
+    <!-- <div class="container-fluid service bg-light pb-3">
+        <div class="container pb-3">
+            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                <p class="text-uppercase text-secondary fs-5 mb-0">Our Services</p>
+                <h2 class="display-4 text-capitalize mb-3">our service is creative, & decent</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="service-item">
+                        <div class="service-img">
+                            <img src="img/our.jpeg" class="img-fluid w-100" alt="Image">
+                        </div>
+                        <div class="service-content text-center p-4">
+                            <div class="bg-secondary btn-xl-square mx-auto" style="width: 120px; height: 120px;">
+                                <i class="fas fa-home text-primary fa-4x"></i>
+                            </div>
+                            <a href="#" class="d-block fs-4 my-4">Market Analysis:</a>
+                            <p class="text-white mb-4"> Stay ahead with in-depth insights and real-time updates on
+                                global market trends.</p>
+                            <a class="btn btn-secondary py-2 px-4" href="#">Read More</a>
+                        </div>
+                        <div class="service-tytle">
+                            <div class="d-flex align-items-center ps-4 w-100">
+                                <h4>Market Analysis</h4>
+                            </div>
+                            <div class="btn-xl-square bg-secondary p-4" style="width: 80px; height: 80px;">
+                                <i class="fas fa-home text-primary fa-2x"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="service-item">
+                        <div class="service-img">
+                            <img src="img/International-Trade.webp" class="img-fluid w-100" alt="Image">
+                        </div>
+                        <div class="service-content text-center p-4">
+                            <div class="bg-secondary btn-xl-square mx-auto" style="width: 120px; height: 120px;">
+                                <i class="fas fa-users-cog text-primary fa-4x"></i>
+                            </div>
+                            <a href="#" class="d-block fs-4 my-4">Trading Platform:</a>
+                            <p class="text-white mb-4"> Access a user-friendly and secure platform to execute trades
+                                efficiently.</p>
+                            <a class="btn btn-secondary py-2 px-4" href="#">Read More</a>
+                        </div>
+                        <div class="service-tytle">
+                            <div class="d-flex align-items-center justify-content-start ps-4 w-100">
+                                <h4>Trading Platform</h4>
+                            </div>
+                            <div class="btn-xl-square bg-secondary p-4" style="width: 80px; height: 80px;">
+                                <i class="fas fa-users-cog text-primary fa-2x"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="service-item">
+                        <div class="service-img">
+                            <img src="img/creative2.jpeg" class="img-fluid w-100" alt="Image">
+                        </div>
+                        <div class="service-content text-center p-4">
+                            <div class="bg-secondary btn-xl-square mx-auto" style="width: 120px; height: 120px;">
+                                <i class="fas fa-hospital-user text-primary fa-4x"></i>
+                            </div>
+                            <a href="#" class="d-block fs-4 my-4">Portfolio Management:</a>
+                            <p class="text-white mb-4"> Let us help you diversify and grow your investments.</p>
+                            <a class="btn btn-secondary py-2 px-4" href="#">Read More</a>
+                        </div>
+                        <div class="service-tytle">
+                            <div class="d-flex align-items-center justify-content-start ps-4 w-100">
+                                <h4>Portfolio Management</h4>
+                            </div>
+                            <div class="btn-xl-square bg-secondary p-4" style="width: 80px; height: 80px;">
+                                <i class="fas fa-hospital-user text-primary fa-2x"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.2s">
+                    <a class="btn btn-secondary py-3 px-5 mt-4" href="#">More Services</a>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Services End -->
+
+    <!-- Fact Counter -->
+    <!-- <div class="container-fluid counter py-3">
+        <div class="container py-3">
+            <div class="row g-4">
+                <div class="col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="counter-box">
+                        <div class="counter-item">
+                            <div class="counter-item-style"></div>
+                            <div class="counter-item-inner p-5">
+                                <i class="fas fa-thumbs-up fa-4x text-secondary"></i>
+                                <h4 class="text-dark my-4">Completed Projects</h4>
+                                <div class="counter-counting">
+                                    <span class="text-secondary fs-2 fw-bold" data-toggle="counter-up">456</span>
+                                    <span class="h1 fw-bold text-secondary">+</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="counter-box">
+                        <div class="counter-item">
+                            <div class="counter-item-style"></div>
+                            <div class="counter-item-inner p-5">
+                                <i class="fas fa-users fa-4x text-secondary"></i>
+                                <h4 class="text-dark my-4">Happy Customers</h4>
+                                <div class="counter-counting">
+                                    <span class="text-secondary fs-2 fw-bold" data-toggle="counter-up">513</span>
+                                    <span class="h1 fw-bold text-secondary">+</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="counter-box">
+                        <div class="counter-item">
+                            <div class="counter-item-style"></div>
+                            <div class="counter-item-inner p-5">
+                                <i class="fas fa-user fa-4x text-secondary"></i>
+                                <h4 class="text-dark my-4">Qualified teams</h4>
+                                <div class="counter-counting">
+                                    <span class="text-secondary fs-2 fw-bold" data-toggle="counter-up">53</span>
+                                    <span class="h1 fw-bold text-secondary">+</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+                    <div class="counter-box">
+                        <div class="counter-item">
+                            <div class="counter-item-style"></div>
+                            <div class="counter-item-inner p-5">
+                                <i class="fas fa-heart fa-4x text-secondary"></i>
+                                <h4 class="text-dark my-4">Years Experiance</h4>
+                                <div class="counter-counting">
+                                    <span class="text-secondary fs-2 fw-bold" data-toggle="counter-up">17</span>
+                                    <span class="h1 fw-bold text-secondary">+</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 text-center pt-4 wow fadeInUp" data-wow-delay="0.9s">
+                    <a class="counter-btn btn btn-secondary py-3 px-5" href="#">Join With Us</a>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Fact Counter -->
+    <!-- Activities Section Start -->
+    <div class="container-fluid bg-light py-5">
+      <div class="container">
+        <!-- Section Header -->
+        <div
+          class="text-center mx-auto mb-5 wow fadeInUp"
+          data-wow-delay="0.2s"
+          style="max-width: 800px"
+        >
+          <h2 class="display-4 text-capitalize mb-3">Our Activities</h2>
+          <p class="fs-5 text-muted">
+            Discover the diverse activities we undertake to promote, support,
+            and develop industries in our region.
+          </p>
+        </div>
+
+        <!-- Activity Highlights -->
+        <div class="row g-4 mb-5">
+          <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
+            <div
+              class="activity-card text-center bg-white shadow-sm p-4 rounded h-100"
+            >
+              <div
+                class="icon-box mx-auto mb-3 bg-primary text-white rounded-circle d-flex align-items-center justify-content-center"
+              >
+                <i class="fas fa-industry fa-2x"></i>
+              </div>
+              <h5 class="mb-2">Promoting Industries</h5>
+              <p class="text-muted mb-0">
+                Encouraging and supporting industrial activities in the
+                district.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 wow fadeInUp" data-wow-delay="0.2s">
+            <div
+              class="activity-card text-center bg-white shadow-sm p-4 rounded h-100"
+            >
+              <div
+                class="icon-box mx-auto mb-3 bg-success text-white rounded-circle d-flex align-items-center justify-content-center"
+              >
+                <i class="fas fa-comment-dots fa-2x"></i>
+              </div>
+              <h5 class="mb-2">Policy Advocacy</h5>
+              <p class="text-muted mb-0">
+                Providing suggestions and feedback to the government on
+                industrial policies.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 wow fadeInUp" data-wow-delay="0.3s">
+            <div
+              class="activity-card text-center bg-white shadow-sm p-4 rounded h-100"
+            >
+              <div
+                class="icon-box mx-auto mb-3 bg-warning text-white rounded-circle d-flex align-items-center justify-content-center"
+              >
+                <i class="fas fa-users fa-2x"></i>
+              </div>
+              <h5 class="mb-2">Community Engagement</h5>
+              <p class="text-muted mb-0">
+                Organizing interactive sessions, workshops, and socio-cultural
+                programs.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Timeline Section -->
+        <div class="timeline">
+          <div class="timeline-event wow fadeInUp" data-wow-delay="0.1s">
+            <div class="timeline-icon bg-primary text-white">
+              <i class="fas fa-lightbulb"></i>
+            </div>
+            <div class="timeline-content bg-white p-4 rounded shadow-sm">
+              <h5>Seminars & Workshops</h5>
+              <p>
+                Conducting seminars and workshops on various industrial and
+                technical subjects.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-event wow fadeInUp" data-wow-delay="0.2s">
+            <div class="timeline-icon bg-success text-white">
+              <i class="fas fa-users-cog"></i>
+            </div>
+            <div class="timeline-content bg-white p-4 rounded shadow-sm">
+              <h5>Member Support</h5>
+              <p>
+                Addressing individual issues faced by members and providing
+                effective solutions.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-event wow fadeInUp" data-wow-delay="0.3s">
+            <div class="timeline-icon bg-warning text-white">
+              <i class="fas fa-hands-helping"></i>
+            </div>
+            <div class="timeline-content bg-white p-4 rounded shadow-sm">
+              <h5>Interactive Sessions</h5>
+              <p>
+                Engaging with senior government officials to discuss industrial
+                challenges and opportunities.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Activities Section End -->
+
+    <!-- Services Start -->
+    <div class="container-fluid feature bg-light py-5">
+      <div class="container">
+        <!-- Section Header -->
+        <div
+          class="text-center mx-auto mb-5 wow fadeInUp"
+          data-wow-delay="0.2s"
+          style="max-width: 800px"
+        >
+          <h2 class="display-4 text-capitalize mb-3">Our Top Services</h2>
+          <p class="fs-5 text-muted">
+            Discover our wide range of services tailored to empower SMEs and
+            foster growth.
+          </p>
+        </div>
+
+        <!-- Services Content -->
+        <div class="row g-4">
+          <!-- Service 1 -->
+          <div class="col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div
+              class="service-item d-flex align-items-center bg-white p-4 rounded shadow-sm"
+            >
+              <div
+                class="service-icon flex-shrink-0 bg-primary text-white rounded-circle p-3 me-3"
+              >
+                <i class="fas fa-handshake fa-2x"></i>
+              </div>
+              <div>
+                <h5 class="mb-2">Support for SMEs</h5>
+                <p class="mb-0 text-muted">
+                  Helping SMEs establish new ventures and prepare for future
+                  challenges.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+            <div
+              class="service-item d-flex align-items-center bg-white p-4 rounded shadow-sm"
+            >
+              <div
+                class="service-icon flex-shrink-0 bg-success text-white rounded-circle p-3 me-3"
+              >
+                <i class="fas fa-comments fa-2x"></i>
+              </div>
+              <div>
+                <h5 class="mb-2">Policy Feedback</h5>
+                <p class="mb-0 text-muted">
+                  Providing data and feedback to the Government on SME status.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div
+              class="service-item d-flex align-items-center bg-white p-4 rounded shadow-sm"
+            >
+              <div
+                class="service-icon flex-shrink-0 bg-warning text-white rounded-circle p-3 me-3"
+              >
+                <i class="fas fa-chart-line fa-2x"></i>
+              </div>
+              <div>
+                <h5 class="mb-2">Policy Implementation</h5>
+                <p class="mb-0 text-muted">
+                  Ensuring proper implementation of Government policies for
+                  SMEs.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 4 -->
+          <div class="col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+            <div
+              class="service-item d-flex align-items-center bg-white p-4 rounded shadow-sm"
+            >
+              <div
+                class="service-icon flex-shrink-0 bg-danger text-white rounded-circle p-3 me-3"
+              >
+                <i class="fas fa-globe fa-2x"></i>
+              </div>
+              <div>
+                <h5 class="mb-2">Global Exposure</h5>
+                <p class="mb-0 text-muted">
+                  Organizing trade promotions and exhibitions worldwide.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 5 -->
+          <div class="col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+            <div
+              class="service-item d-flex align-items-center bg-white p-4 rounded shadow-sm"
+            >
+              <div
+                class="service-icon flex-shrink-0 bg-info text-white rounded-circle p-3 me-3"
+              >
+                <i class="fas fa-chalkboard-teacher fa-2x"></i>
+              </div>
+              <div>
+                <h5 class="mb-2">Skill Development</h5>
+                <p class="mb-0 text-muted">
+                  Conducting training, workshops, and seminars for
+                  entrepreneurs.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 6 -->
+          <div class="col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+            <div
+              class="service-item d-flex align-items-center bg-white p-4 rounded shadow-sm"
+            >
+              <div
+                class="service-icon flex-shrink-0 bg-secondary text-white rounded-circle p-3 me-3"
+              >
+                <i class="fas fa-users-cog fa-2x"></i>
+              </div>
+              <div>
+                <h5 class="mb-2">Manpower Support</h5>
+                <p class="mb-0 text-muted">
+                  Helping SMEs improve the quality and skill set of their
+                  workforce.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Services End -->
+
+    <!-- Membership Benefits Section Start -->
+    <div
+      class="container-fluid feature bg-light py-5"
+      style="background-color: azure"
+    >
+      <div class="container py-5">
+        <div
+          class="text-center mx-auto pb-5 wow fadeInUp"
+          data-wow-delay="0.2s"
+          style="max-width: 800px"
+        >
+          <p class="text-uppercase text-secondary fs-5 mb-0">Membership</p>
+          <h2 class="display-4 text-capitalize mb-3">Benefits of Joining</h2>
+        </div>
+        <div class="row g-4">
+          <!-- Networking Opportunities -->
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+            <div
+              class="feature-item text-center border p-3 rounded shadow-sm hover-shadow"
+            >
+              <div
+                class="feature-img bg-primary d-inline-flex p-4 rounded-circle mb-4"
+              >
+                <i class="fas fa-users text-white fa-2x"></i>
+              </div>
+              <h4 class="h4 d-block my-4">Networking Opportunities</h4>
+              <p class="mb-0">
+                Access to an exclusive network of industrialists and
+                policymakers.
+              </p>
+            </div>
+          </div>
+          <!-- Policy Advocacy -->
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+            <div
+              class="feature-item text-center border p-3 rounded shadow-sm hover-shadow"
+            >
+              <div
+                class="feature-img bg-warning d-inline-flex p-4 rounded-circle mb-4"
+              >
+                <i class="fas fa-flag-checkered text-white fa-2x"></i>
+              </div>
+              <h4 class="h4 d-block my-4">Policy Advocacy</h4>
+              <p class="mb-0">
+                GIA represents member concerns to the government.
+              </p>
+            </div>
+          </div>
+          <!-- Event Access -->
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+            <div
+              class="feature-item text-center border p-3 rounded shadow-sm hover-shadow"
+            >
+              <div
+                class="feature-img bg-success d-inline-flex p-4 rounded-circle mb-4"
+              >
+                <i class="fas fa-calendar-alt text-white fa-2x"></i>
+              </div>
+              <h4 class="h4 d-block my-4">Event Access</h4>
+              <p class="mb-0">
+                Invitations to premium seminars, expos, and training programs.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Membership Benefits Section End -->
+
+    <!-- Owl Carousel CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+
+    <!-- Features Start -->
+    <div class="container-fluid feature bg-light py-2">
+      <div class="container py-2">
+        <!-- Contact Us Section -->
+        <div
+          class="text-center mx-auto pb-4 wow fadeInUp"
+          data-wow-delay="0.2s"
+          style="max-width: 600px"
+        >
+          <h2 class="display-4 text-capitalize mb-3">Contact Us</h2>
+          <p class="fs-5">
+            Let’s Connect! Have questions? Interested in joining? We’d love to
+            hear from you.
+          </p>
+        </div>
+        <div class="row g-4">
+          <!-- Contact Form Section -->
+          <div class="col-lg-7 col-md-12 wow fadeInLeft" data-wow-delay="0.2s">
+            <div class="bg-white p-4 rounded shadow-sm border-light">
+              <h4 class="text-center mb-4">Get in Touch</h4>
+              <form>
+                <div class="mb-3">
+                  <label for="name" class="form-label"
+                    ><i class="fas fa-user-circle text-primary"></i> Your
+                    Name</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="Enter your name"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label"
+                    ><i class="fas fa-envelope text-primary"></i> Email
+                    Address</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="Enter your email"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label"
+                    ><i class="fas fa-comment-dots text-primary"></i>
+                    Message</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    rows="3"
+                    placeholder="Enter your message"
+                    required
+                  ></textarea>
+                </div>
+                <div class="text-end">
+                  <button type="submit" class="btn btn-primary">
+                    Send Message
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <!-- Contact Information Section -->
+          <div class="col-lg-5 col-md-12 wow fadeInRight" data-wow-delay="0.2s">
+            <div class="bg-white p-4 rounded shadow-sm border-light">
+              <h4 class="text-center mb-4">Our Contact Info</h4>
+              <ul class="list-unstyled fs-6">
+                <li>
+                  <strong
+                    ><i class="fas fa-envelope text-primary mt-2"></i>
+                    Email:</strong
+                  >
+                  <a href="mailto:info@giaonline.org">info@giaonline.org</a>
+                </li>
+                <li>
+                  <strong
+                    ><i class="fas fa-phone-alt text-primary mt-2"></i>
+                    Phone:</strong
+                  >
+                  <a href="tel:++919654141818">+91 96259 66492</a>
+                </li>
+                <li>
+                  <strong
+                    ><i class="fas fa-map-marker-alt text-primary mt-2"></i>
+                    Address:</strong
+                  >
+                  G.I.A. House, G.I.A. Marg, Opp. Sector 14, I.D.C, <br />
+                  Mehrauli Road, Gurugram, Haryana 122001
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Google Map Section -->
+        <div class="row mt-2">
+          <div class="col-12">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.2921836471387!2d77.0512937!3d28.4707461!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d19ad4dd0b1fb%3A0x83ff33a1983c977e!2sGurgaon%20Industrial%20Association!5e0!3m2!1sen!2sin!4v1744715134960!5m2!1sen!2sin"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              width="100%"
+              height="250"
+              style="border: 0"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Features End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer py-3 wow fadeIn" data-wow-delay="0.2s">
+      <div class="container py-2">
+        <div class="row g-5">
+          <div class="col-md-6 col-lg-6 col-xl-2">
+            <div class="footer-item d-flex flex-column">
+              <div class="footer-item">
+                <img src="img/logo.png" class="img-fluid logo" alt="" />
+                <p class="mb-2">"Uniting Industries, Igniting Growth!"</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6 col-xl-3">
+            <div class="footer-item d-flex flex-column">
+              <h4 class="text-white mb-4">Quick Links</h4>
+              <a href="event.html"
+                ><i class="fas fa-angle-right me-2"></i>Event Calendar</a
+              >
+              <a href="gallery.html"
+                ><i class="fas fa-angle-right me-2"></i>Photo Gallery</a
+              >
+              <a href="blog.html"
+                ><i class="fas fa-angle-right me-2"></i>Blogs</a
+              >
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6 col-xl-4">
+            <div class="footer-item d-flex flex-column">
+              <h4 class="text-white mb-4">Contact Info</h4>
+              <a href=""><i class="fas fa-phone me-2"></i>+91 96259 66492</a>
+              <a href=""
+                ><i class="fas fa-envelope me-2"></i> info@giaonline.org</a
+              >
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6 col-xl-3">
+            <div class="footer-item d-flex flex-column">
+              <h4 class="text-white mb-4">Address</h4>
+              <div class="footer-btn d-flex align-items-center">
+                <a href=""
+                  ><i class="fa fa-map-marker-alt me-2"></i> G.I.A. House,
+                  G.I.A. Marg, Opp. Sector 14, I.D.C, Mehrauli Road,
+                  Gurugram.</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer End -->
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-4">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <div class="col-md-6 text-center text-md-start mb-md-0">
+            <span class="text-body"
+              >Copyright © 2024 Gurgaon Industrial Association. All Rights
+              Reserved.</span
+            >
+          </div>
+          <div class="col-md-6 text-center text-md-end text-body">
+            Designed By
+            <a class="border-bottom text-white" href="#">Stratzic</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Copyright End -->
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-secondary btn-lg-square back-to-top"
+      ><i class="fa fa-arrow-up"></i
+    ></a>
+    <!-- JavaScript Libraries -->
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".client-logos-carousel").owlCarousel({
+          loop: true, // Infinite loop
+          margin: 30, // Space between items
+          responsiveClass: true, // Allow responsive behavior
+          autoplay: true, // Enable autoplay
+          autoplayTimeout: 2000, // Time between slides in ms
+          autoplayHoverPause: true, // Pause autoplay when hover
+          nav: true, // Show navigation buttons
+          dots: false, // Disable dots (navigation)
+          items: 5, // Number of items displayed at once
+          responsive: {
+            0: { items: 2 }, // 2 items on mobile
+            600: { items: 3 }, // 3 items on tablet
+            1000: { items: 5 }, // 5 items on desktop
+          },
+        });
+      });
+    </script>
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
