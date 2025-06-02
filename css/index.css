@@ -1,0 +1,372 @@
+@media (max-width: 576px) {
+
+    .mobileres {
+        display: inline !important;
+    }
+
+    .flex-shrink-0 {
+        margin-left: 20px;
+    }
+    .border-rounded {
+        border-radius: 20px;
+        padding: 12px;
+        margin-top: 7px;
+    }
+    .carousel-indicators {
+        position: absolute;
+        left: 15px;
+        bottom: -10px;
+        }
+
+}
+
+
+/* General Styling */
+.service-item {
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.service-item:hover {
+transform: translateY(-5px);
+box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Icon Styling */
+.service-icon {
+display: flex;
+justify-content: center;
+align-items: center;
+width: 70px;
+height: 70px;
+transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.service-item:hover .service-icon {
+transform: rotate(15deg);
+}
+
+/* Text Styling */
+.service-item h5 {
+font-size: 1.2rem;
+color: #333;
+}
+.service-item p {
+font-size: 1rem;
+color: #666;
+margin-bottom: 0;
+}
+
+/* General Styling */
+.activities-list {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.activities-list:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* List Item Hover Effects */
+.activities-list li:hover {
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Icon Styling */
+.activities-list i {
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.activities-list li:hover i {
+    color: #007bff;
+    /* Primary color on hover */
+    transform: scale(1.2);
+}
+
+
+
+.feature-item {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.feature-img {
+    transition: background-color 0.3s;
+}
+
+.feature-item:hover .feature-img {
+    background-color: #007bff;
+    /* Change hover background color */
+}
+
+.feature-item:hover i {
+    color: #ffffff;
+    /* Change icon color on hover */
+}
+
+i.fa-2x {
+    font-size: 1.5rem !important;
+}
+
+
+    /* General Styles */
+.activity-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.activity-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.icon-box {
+    width: 70px;
+    height: 70px;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.activity-card:hover .icon-box {
+    transform: rotate(15deg);
+}
+
+/* Timeline Styles */
+.timeline {
+    position: relative;
+    margin-top: 30px;
+    padding-left: 20px;
+    border-left: 3px solid #ccc;
+}
+.timeline-event {
+    position: relative;
+    margin-bottom: 20px;
+}
+.timeline-icon {
+    position: absolute;
+    top: 0;
+    left: -40px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+.timeline-event:hover .timeline-icon {
+    transform: scale(1.1);
+}
+.timeline-content {
+    margin-left: 20px;
+}
+.timeline-content h5 {
+    font-size: 1.2rem;
+    color: #333;
+}
+.timeline-content p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .timeline {
+        padding-left: 10px;
+        border-left: 2px solid #ccc;
+    }
+    .timeline-icon {
+        left: -30px;
+    }
+    .timeline-content {
+        margin-left: 15px;
+    }
+}
+
+
+    /* General Styles */
+.team-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.team-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+.teamimg{
+    height: 280px !important;
+}
+
+.team-img img {
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+.team-item:hover .team-img img {
+    transform: scale(1.1);
+}
+
+/* Social Media Buttons */
+.team-icon a {
+    transition: transform 0.3s ease;
+}
+.team-item:hover .team-icon a {
+    transform: scale(1.1);
+}
+
+.team-icon .btn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.team-icon .btn:hover {
+    background-color: rgb(3, 144, 239);
+}
+
+/* Team Info */
+.text-center h5 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #0d6efd;
+}
+.text-center h6 {
+    font-size: 1rem;
+    color: #000;
+}
+.text-center p {
+    font-size: 0.9rem;
+    color: #000;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .team-item {
+        margin-bottom: 30px;
+    }
+    .team-img img {
+        height: 200px;
+    }
+}
+
+/* Styling for the client logos */
+.client-logo-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.client-logo {
+  max-width: 100%;
+  max-height: 100px;          /* Limit logo height */
+  object-fit: contain;        /* Ensure the logo maintains aspect ratio */
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
+.client-logo  .logo{
+  max-width: 100%;
+  max-height: 100px !important;          /* Limit logo height */
+  object-fit: contain;        /* Ensure the logo maintains aspect ratio */
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.client-logo:hover {
+  transform: scale(1.1);      /* Hover effect to zoom logo */
+}
+
+/* Adjust the margin between logos */
+.owl-carousel .owl-item {
+  margin-right: 30px;
+}
+
+.owl-carousel .owl-nav {
+  position: absolute;
+  top: 5%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.owl-carousel .owl-nav button {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.owl-carousel .owl-nav button:hover {
+  background-color: rgba(218, 5, 5, 0.8);
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.textheader{
+    color: white !important;
+}
+
+.feature-item {
+    transition: all 0.3s ease;
+}
+
+.feature-img {
+    background-color: #f8f9fa;
+    transition: background-color 0.3s ease;
+}
+
+.feature-item:hover .feature-img {
+    background-color: #f1f1f1;
+}
+@media (min-width: 1200px) {
+  .texth4 {
+        font-size: 1.2rem;
+        color:rgb(17, 172, 223)
+    }
+    .border-rounded {
+        border-radius: 20px;
+        padding: 12px !important;
+        margin-top: 4px;
+    }
+}
+
+@media (max-width: 768px) {
+    .feature-item {
+        padding: 3rem 2rem;
+    }
+    .feature-item2 {
+       text-align: left !important;
+       
+    }
+
+    .feature-img i {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .feature-item {
+        padding: 2.5rem 1.5rem;
+    }
+    .uper{
+        font-size: 15px !important;
+    }
+    .carousel-caption {
+       
+        bottom: 0.5rem;
+       
+    }
+
+    .feature-img i {
+        font-size: 2rem;
+    }
+}
+
